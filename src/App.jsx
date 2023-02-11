@@ -1,9 +1,10 @@
 import React from "react";
+import Home from "./pages/home/home";
 
 function App() {
   return (
     <div>
-      <h1>BioMaxi</h1>
+      <Home />
     </div>
   );
 }
