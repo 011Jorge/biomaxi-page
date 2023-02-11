@@ -28,10 +28,16 @@ export const ContainerNav = styled.div`
 
   .nav {
     margin-top: 40px;
+    display: flex;
+    flex-direction: row;
   }
 
   .nav a {
-    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 45px;
 
     font-size: 19px;
 
@@ -39,6 +45,10 @@ export const ContainerNav = styled.div`
     text-decoration: none;
 
     color: #fff;
+
+    .icon {
+      margin-bottom: 5px;
+    }
   }
 
   a:before {
