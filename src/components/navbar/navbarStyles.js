@@ -5,16 +5,24 @@ export const Container = styled.div`
     border: 1px solid red;
   }
 
-  width: 100vw;
-  height: 350px;
+  width: 100%;
+  height: 300px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-family: "Roboto", sans-serif;
-
   background-color: #00225b;
+  background: rgb(23, 0, 36);
+  background: linear-gradient(
+    66deg,
+    rgba(23, 0, 36, 1) 0%,
+    rgba(0, 41, 110, 1) 100%
+  );
+
+  box-shadow: 0px 16px 36px -5px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 16px 36px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 16px 36px -5px rgba(0, 0, 0, 0.7);
 `;
 
 export const ContainerNav = styled.div`
@@ -25,6 +33,10 @@ export const ContainerNav = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 200px;
+  }
 
   .nav {
     margin-top: 40px;
