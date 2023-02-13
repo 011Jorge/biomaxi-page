@@ -15,7 +15,18 @@ import PlantOne from "../../images/aquatic-plants/plants-one.jpg";
 import PlantTwo from "../../images/aquatic-plants/plants-two.jpg";
 import PlantThree from "../../images/aquatic-plants/plants-three.jpg";
 
-import { About, ContainerHome, Footer, Section } from "./homeStyles";
+import IconFood from "../../images/itens/icon-food.png";
+import IconPlant from "../../images/itens/icon-plant.png";
+import IconDecoration from "../../images/itens/icon-decoration.png";
+import IconEquipment from "../../images/itens/icon-equipment.png";
+
+import {
+  About,
+  Accessories,
+  ContainerHome,
+  Footer,
+  Section,
+} from "./homeStyles";
 
 function Home() {
   return (
@@ -106,6 +117,48 @@ function Home() {
           </div>
         </div>
       </Section>
+      <Accessories>
+        <div>
+          <img src={IconFood} alt="icon-food" />
+          <h3>Rações</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            quia! Atque repudiandae recusandae quidem cum laboriosam iure
+            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
+            autem totam illum ratione.
+          </p>
+        </div>
+        <div>
+          <img src={IconPlant} alt="icon-plant" />
+          <h3>Plantas Aquáticas</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            quia! Atque repudiandae recusandae quidem cum laboriosam iure
+            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
+            autem totam illum ratione.
+          </p>
+        </div>
+        <div>
+          <img src={IconDecoration} alt="icon-decoration" />
+          <h3>Decorações</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            quia! Atque repudiandae recusandae quidem cum laboriosam iure
+            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
+            autem totam illum ratione.
+          </p>
+        </div>
+        <div>
+          <img src={IconEquipment} alt="icon-equipment" />
+          <h3>Equipamentos</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            quia! Atque repudiandae recusandae quidem cum laboriosam iure
+            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
+            autem totam illum ratione.
+          </p>
+        </div>
+      </Accessories>
       <div className="container-export">
         <iframe
           className="container-video border"

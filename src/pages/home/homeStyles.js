@@ -2,6 +2,8 @@ import styled from "styled-components";
 import background from "../../images/itens/background.jpg";
 
 export const ContainerHome = styled.div`
+  color: #000000;
+
   background-color: #dcdcdc;
 
   .border {
@@ -129,6 +131,45 @@ export const Section = styled.div`
       width: 330px;
       margin-top: 20px;
       border-radius: 12px;
+    }
+  }
+`;
+
+export const Accessories = styled.div`
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 390px;
+    height: 400px;
+
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+    background-color: #ccc;
+
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    img {
+      width: 80px;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 50px;
     }
   }
 `;
