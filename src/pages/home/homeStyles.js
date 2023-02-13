@@ -2,6 +2,8 @@ import styled from "styled-components";
 import background from "../../images/itens/background.jpg";
 
 export const ContainerHome = styled.div`
+  background-color: #dcdcdc;
+
   .border {
     border: 1px solid red;
   }
@@ -23,6 +25,19 @@ export const ContainerHome = styled.div`
     justify-content: flex-start;
     margin: 50px 0 0 50px;
   }
+
+  .container-export {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+  }
+
+  .container-video {
+    width: 800px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 8px;
+  }
 `;
 
 export const About = styled.div`
@@ -42,6 +57,7 @@ export const About = styled.div`
   }
 
   h1 {
+    font-weight: bold;
     margin-top: 10px;
     font-size: 80px;
     color: #fff;
@@ -57,7 +73,7 @@ export const About = styled.div`
 
 export const Section = styled.div`
   .container-info {
-    width: 80%;
+    width: 85%;
 
     padding: 40px;
 
@@ -67,7 +83,7 @@ export const Section = styled.div`
     align-items: center;
 
     border-radius: 10px;
-    background-color: #dcdcdc;
+    background-color: transparent;
 
     .container-text {
       font-size: 19px;
@@ -77,6 +93,10 @@ export const Section = styled.div`
       padding: 30px;
       background-color: #cccc;
       border-radius: 10px;
+
+      h1 {
+        font-weight: bold;
+      }
 
       p {
         margin-top: 10px;
@@ -111,4 +131,11 @@ export const Section = styled.div`
       border-radius: 12px;
     }
   }
+`;
+
+export const Footer = styled.div`
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+  background-color: #032650;
 `;

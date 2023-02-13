@@ -1,7 +1,7 @@
 import React from "react";
 
 import Nav from "../../components/navbar/navbar";
-import { About, ContainerHome, Section } from "./homeStyles";
+import Carousel from "../../components/carousel/carousel";
 
 import SaltFishOne from "../../images/saltwater/saltwater-fish-one.jpg";
 import SaltFishTwo from "../../images/saltwater/saltwater-fish-two.jpg";
@@ -14,6 +14,8 @@ import FreshFishThree from "../../images/freshwater/freshwater-fish-three.jpg";
 import PlantOne from "../../images/aquatic-plants/plants-one.jpg";
 import PlantTwo from "../../images/aquatic-plants/plants-two.jpg";
 import PlantThree from "../../images/aquatic-plants/plants-three.jpg";
+
+import { About, ContainerHome, Footer, Section } from "./homeStyles";
 
 function Home() {
   return (
@@ -31,6 +33,7 @@ function Home() {
           <h3>Soluções completas para aquários & lagos.</h3>
         </div>
       </About>
+      <Carousel />
       <Section className="first-section">
         <div className="container-info ">
           <div className="container-text ">
@@ -103,6 +106,26 @@ function Home() {
           </div>
         </div>
       </Section>
+      <div className="container-export">
+        <iframe
+          className="container-video border"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.091665490236!2d-46.79375618441971!3d-23.203329784861918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cedf0b09f5bb17%3A0xc9a29e4617f390f0!2sBiomaxi%20Ecossistemas!5e0!3m2!1spt-BR!2sbr!4v1676251409003!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <iframe
+          className="container-video border"
+          src="https://www.youtube.com/embed/O5cEAKU7Sno"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <Footer></Footer>
     </ContainerHome>
   );
 }
