@@ -23,6 +23,7 @@ import IconEquipment from "../../images/itens/icon-equipment.png";
 import {
   About,
   Accessories,
+  Article,
   ContainerHome,
   Footer,
   Section,
@@ -44,7 +45,43 @@ function Home() {
           <h3>Soluções completas para aquários & lagos.</h3>
         </div>
       </About>
-      <Carousel />
+      <div>
+        <Carousel />
+      </div>
+      <Article className="article">
+        <div>
+          <h1>
+            <span className="span1">Sobre </span>
+            <span className="span2">Nós</span>
+          </h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+            quaerat recusandae veritatis, ut, explicabo quidem obcaecati
+            similique aliquam sit hic ea quae, dicta harum at animi nobis maxime
+            ratione. Ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Repellendus accusantium sint, non sed quasi nemo veniam
+            sapiente ea, aperiam quas velit, repellat eius perferendis ipsa iste
+            debitis? Rem, repellendus illum. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Totam quis perspiciatis commodi esse
+            sequi at soluta hic sed, odio, dolorem consectetur vel reiciendis
+            in, harum atque molestias fuga laboriosam quasi! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Veniam corrupti nihil porro
+            ea esse? Saepe asperiores eum tempore iure voluptate. Dicta nisi
+            adipisci quidem dolorum, cum possimus delectus accusamus incidunt.
+          </p>
+        </div>
+        <div className="container-export">
+          <iframe
+            autoplay
+            loop
+            className="container-video border"
+            src="https://www.youtube.com/embed/O5cEAKU7Sno/?&autoplay=1"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </Article>
       <Section className="first-section">
         <div className="container-info ">
           <div className="container-text ">
@@ -159,25 +196,7 @@ function Home() {
           </p>
         </div>
       </Accessories>
-      <div className="container-export">
-        <iframe
-          className="container-video border"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.091665490236!2d-46.79375618441971!3d-23.203329784861918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cedf0b09f5bb17%3A0xc9a29e4617f390f0!2sBiomaxi%20Ecossistemas!5e0!3m2!1spt-BR!2sbr!4v1676251409003!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <iframe
-          className="container-video border"
-          src="https://www.youtube.com/embed/O5cEAKU7Sno"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
+
       <Footer></Footer>
     </ContainerHome>
   );

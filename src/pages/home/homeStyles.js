@@ -7,7 +7,6 @@ export const ContainerHome = styled.div`
   background-color: #dcdcdc;
 
   .border {
-    border: 1px solid red;
   }
 
   .first-section {
@@ -30,13 +29,13 @@ export const ContainerHome = styled.div`
 
   .container-export {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background-color: #ccc;
   }
 
   .container-video {
-    width: 800px;
-    height: 400px;
+    width: 900px;
+    height: 500px;
     margin: 50px;
     border-radius: 8px;
   }
@@ -70,6 +69,41 @@ export const About = styled.div`
     font-size: 30px;
     font-weight: lighter;
     color: #fff;
+  }
+`;
+
+export const Article = styled.div`
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+
+  background-color: #ccc;
+  color: black;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 50px 50px 50px 100px;
+
+  h1 {
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: bold;
+
+    .span1 {
+      color: #8bc242;
+    }
+
+    .span2 {
+      color: #237bb8;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    width: 90%;
   }
 `;
 
