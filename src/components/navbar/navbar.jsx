@@ -1,6 +1,6 @@
 import React from "react";
 
-import { GiSeatedMouse, GiCirclingFish } from "react-icons/gi/index";
+import { GiSeatedMouse } from "react-icons/gi/index";
 import { CgProfile } from "react-icons/cg/index";
 import { FaFish, FaPhoneAlt } from "react-icons/fa/index";
 

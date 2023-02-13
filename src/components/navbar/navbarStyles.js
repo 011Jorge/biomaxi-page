@@ -1,38 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  .border {
-    border: 1px solid red;
-  }
-
   width: 100%;
-  height: 300px;
+  height: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: #00225b;
-  background: rgb(23, 0, 36);
-  background: linear-gradient(
-    66deg,
-    rgba(23, 0, 36, 1) 0%,
-    rgba(0, 41, 110, 1) 100%
-  );
-
-  box-shadow: 0px 16px 36px -5px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 0px 16px 36px -5px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 16px 36px -5px rgba(0, 0, 0, 0.7);
 `;
 
 export const ContainerNav = styled.div`
-  width: 90vw;
-  height: 300px;
+  width: 100%;
+  height: auto;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 150px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   img {
     width: 200px;
@@ -51,12 +39,16 @@ export const ContainerNav = styled.div`
 
     padding: 10px 45px;
 
-    font-size: 19px;
+    font-size: 20px;
 
     position: relative;
     text-decoration: none;
 
     color: #fff;
+
+    &:active {
+      opacity: 0.5;
+    }
 
     .icon {
       margin-bottom: 5px;
@@ -67,7 +59,7 @@ export const ContainerNav = styled.div`
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 5px;
     bottom: 0;
     left: 0;
     background-color: #89c43a;
