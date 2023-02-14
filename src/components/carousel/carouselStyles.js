@@ -1,21 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 30px;
+  height: 100vh;
+  background-color: #031d42;
+  padding-top: 100px;
 
-  display: flex;
-  justify-content: center;
-  border-radius: 12px;
+  margin-top: 50px;
 
-  .carousel {
-    width: 1500px;
+  text-align: center;
+
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
   }
 
-  .carousel-item {
-  }
-
-  .carousel-image {
-    height: auto;
-    border-radius: 12px;
+  img {
+    border: 2px solid #fff;
+    border-radius: 10px;
   }
 `;

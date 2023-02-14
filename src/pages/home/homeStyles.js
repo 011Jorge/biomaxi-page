@@ -120,7 +120,7 @@ export const ContainerNav = styled.div`
   }
 `;
 
-export const About = styled.div`
+export const ContainerHeader = styled.div`
   width: 100%;
   height: 110vh;
 
@@ -151,7 +151,7 @@ export const About = styled.div`
   }
 `;
 
-export const Marks = styled.div`
+export const ContainerMarks = styled.div`
   width: 100%;
   height: 100px;
 
@@ -168,7 +168,7 @@ export const Marks = styled.div`
   }
 `;
 
-export const Article = styled.div`
+export const ContainerAbout = styled.div`
   width: 100%;
   height: auto;
   margin-top: 50px;
@@ -285,7 +285,7 @@ export const Insta = styled.div`
   }
 `;
 
-export const Accessories = styled.div`
+export const ContainerAccessories = styled.div`
   width: 100%;
   height: 600px;
 
@@ -324,12 +324,20 @@ export const Accessories = styled.div`
   }
 `;
 
-export const Footer = styled.div`
+export const ContainerFooter = styled.div`
   background-color: #031d42;
   padding: 50px 0;
+  hr {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+  }
+
   .container-footer {
     max-width: 1400px;
-    padding: 0 4%;
+    padding: 40px;
     margin: auto;
   }
   .row-footer {
@@ -343,7 +351,7 @@ export const Footer = styled.div`
   }
   .footer-col h4 {
     font-size: 22px;
-    color: white;
+    color: #8cc142;
     margin-bottom: 20px;
     font-weight: bold;
     position: relative;
@@ -356,6 +364,7 @@ export const Footer = styled.div`
     margin: 10px 0;
   }
   .footer-col ul li a {
+    width: 50%;
     font-size: 16px;
     text-transform: capitalize;
     color: white;

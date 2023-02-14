@@ -2,8 +2,16 @@ import React from "react";
 
 import { GiSeatedMouse } from "react-icons/gi/index";
 import { CgProfile } from "react-icons/cg/index";
-import { FaFish, FaPhoneAlt } from "react-icons/fa/index";
+import { AiOutlineLink } from "react-icons/ai/index";
+import {
+  FaFish,
+  FaPhoneAlt,
+  FaInstagram,
+  FaFacebook,
+  FaShoppingCart,
+} from "react-icons/fa/index";
 
+import Slide from "../../components/slide/slide";
 import Carousel from "../../components/carousel/carousel";
 
 import SaltFishOne from "../../images/saltwater/saltwater-fish-one.jpg";
@@ -27,18 +35,17 @@ import IconFacebook from "../../images/itens/icon-facebook.png";
 import IconSite from "../../images/itens/icon-cart.png";
 
 import {
-  About,
-  Accessories,
-  Article,
+  ContainerHeader,
+  ContainerAccessories,
+  ContainerAbout,
   ContainerHome,
-  Footer,
+  ContainerFooter,
   Section,
-  Marks,
+  ContainerMarks,
   Insta,
   ContainerNav,
   ContainerNavbar,
 } from "./homeStyles";
-import Elastic from "../../components/elastic/elastic";
 
 function Home() {
   return (
@@ -50,26 +57,26 @@ function Home() {
             alt="image-logo"
           />
           <div className="nav">
-            <a href="#">
+            <a href="#About">
               <CgProfile className="icon" />
               Sobre nós
             </a>
-            <a href="#">
+            <a href="#Fish">
               <FaFish className="icon" />
               Peixes
             </a>
-            <a href="#">
+            <a href="#Rodents">
               <GiSeatedMouse className="icon" />
               Roedores
             </a>
-            <a href="#">
+            <a href="#Contacts">
               <FaPhoneAlt className="icon" />
               Contatos
             </a>
           </div>
         </ContainerNav>
       </ContainerNavbar>
-      <About id="inicio">
+      <ContainerHeader id="Start">
         <div>
           <img
             src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
@@ -80,9 +87,9 @@ function Home() {
           </h1>
           <h3>Soluções completas para aquários & lagos.</h3>
         </div>
-      </About>
-      <Carousel />
-      <Marks>
+      </ContainerHeader>
+      <Slide />
+      <ContainerMarks>
         <img
           src="https://sadalcon.alcon.ind.br/common/img/logo.png"
           alt="logo-alcon"
@@ -104,8 +111,8 @@ function Home() {
           src="http://www.tropicalimport.com.br/wp-content/uploads/2017/01/logo-tropical.png"
           alt="logo-tropical"
         />
-      </Marks>
-      <Article id="About" className="article">
+      </ContainerMarks>
+      <ContainerAbout id="About" className="container-about">
         <div>
           <h1>
             <span className="span1">Sobre </span>
@@ -137,7 +144,7 @@ function Home() {
             allowfullscreen
           ></iframe>
         </div>
-      </Article>
+      </ContainerAbout>
       <Section id="Fish" className="first-section">
         <div className="container-info ">
           <div className="container-text ">
@@ -210,8 +217,8 @@ function Home() {
           </div>
         </div>
       </Section>
-      <Elastic />
-      <Accessories>
+      <Carousel />
+      <ContainerAccessories>
         <div>
           <img src={IconFood} alt="icon-food" />
           <h3>Rações</h3>
@@ -252,8 +259,8 @@ function Home() {
             autem totam illum ratione.
           </p>
         </div>
-      </Accessories>
-      <Marks>
+      </ContainerAccessories>
+      <ContainerMarks>
         <img
           src="https://sadalcon.alcon.ind.br/common/img/logo.png"
           alt="logo-alcon"
@@ -275,47 +282,59 @@ function Home() {
           src="http://www.tropicalimport.com.br/wp-content/uploads/2017/01/logo-tropical.png"
           alt="logo-tropical"
         />
-      </Marks>
-      <Footer>
+      </ContainerMarks>
+      <ContainerFooter id="Contacts">
         <div class="container-footer">
           <div class="row-footer">
+            <div class="footer-col">
+              <img
+                src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
+                alt="img-logo"
+                style={{ width: 200 }}
+              />
+              <div class="medias-socias">
+                <a href="#">
+                  <FaInstagram />
+                </a>
+                <a href="#">
+                  <FaFacebook />
+                </a>
+                <a href="#">
+                  <FaShoppingCart />
+                </a>
+                <a href="#">
+                  <AiOutlineLink />
+                </a>
+              </div>
+            </div>
             <div class="footer-col">
               <h4>Navegação</h4>
               <ul>
                 <li>
-                  <a href="">Home</a>
+                  <a href="#Start">Home</a>
                 </li>
                 <li>
-                  <a href="#">Sobre nós</a>
+                  <a href="#About">Sobre nós</a>
                 </li>
                 <li>
-                  <a href="">Peixes</a>
+                  <a href="#Fish">Peixes</a>
                 </li>
                 <li>
-                  <a href="">Roedores</a>
-                </li>
-                <li>
-                  <a href="">Contatoss</a>
+                  <a href="#Rodents">Roedores</a>
                 </li>
               </ul>
             </div>
             <div class="footer-col">
-              <h4>Localização</h4>
+              <h4>Informações</h4>
               <ul>
                 <li>
-                  <a href="#">FAQ</a>
+                  <p>01191333-0330</p>
                 </li>
                 <li>
-                  <a href="#">Transporte</a>
+                  <p>Av. Presidente Washington Luís, 387</p>
                 </li>
                 <li>
-                  <a href="#">devoluções</a>
-                </li>
-                <li>
-                  <a href="#">Status De Pedido</a>
-                </li>
-                <li>
-                  <a href="#">Opções De Pagamento</a>
+                  <p>Campo Limpo Paulista</p>
                 </li>
               </ul>
             </div>
@@ -323,38 +342,27 @@ function Home() {
               <h4>Horário de Funcionamento</h4>
               <ul>
                 <li>
-                  <a href="#">Relógio</a>
+                  <p>Seg á Quin - 09:30 - 18:30</p>
                 </li>
                 <li>
-                  <a href="#">Saco</a>
+                  <p>Sexta - Fechado</p>
                 </li>
                 <li>
-                  <a href="#">Calçado</a>
+                  <p>Sábado - 09:00 - 15:00</p>
                 </li>
                 <li>
-                  <a href="#">Endereço</a>
+                  <p>Domingo - Fechado</p>
                 </li>
               </ul>
             </div>
-            <div class="footer-col">
-              <div class="medias-socias">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
-      </Footer>
+        <hr />
+        <p style={{ textAlign: "center" }}>
+          Todos os direitos reservados a <b>Biomaxi Ecossistemas</b> <br />
+          @2023
+        </p>
+      </ContainerFooter>
     </ContainerHome>
   );
 }
