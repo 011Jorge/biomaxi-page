@@ -31,7 +31,9 @@ import {
   Footer,
   Section,
   Marks,
+  Insta,
 } from "./homeStyles";
+import Elastic from "../../components/elastic/elastic";
 
 function Home() {
   return (
@@ -178,6 +180,8 @@ function Home() {
           </div>
         </div>
       </Section>
+      <Elastic />
+
       <Accessories>
         <div>
           <img src={IconFood} alt="icon-food" />
@@ -220,6 +224,29 @@ function Home() {
           </p>
         </div>
       </Accessories>
+      <Marks>
+        <img
+          src="https://sadalcon.alcon.ind.br/common/img/logo.png"
+          alt="logo-alcon"
+        />
+        <img
+          src="https://www.interago.com.br/App/Sites/5/mc/Logo%20e%20Favicon/Logo%20Poytara%20com%20Cor.png"
+          alt="logo-poytara"
+        />
+        <img
+          src="https://http2.mlstatic.com/storage/mshops-appearance-api/images/54/303273254/logo-2020061016154071000.png"
+          alt="logo-nutricon"
+        />
+        <img
+          src="http://www.labcon.com.br/en/common/img/logo.png"
+          alt="logo-labcon"
+        />
+        <img src="https://www.seachem.com/img/logo@2x.png" alt="logo-seachen" />
+        <img
+          src="http://www.tropicalimport.com.br/wp-content/uploads/2017/01/logo-tropical.png"
+          alt="logo-tropical"
+        />
+      </Marks>
       <Footer id="Contacts">
         <div className="container-image">
           <img

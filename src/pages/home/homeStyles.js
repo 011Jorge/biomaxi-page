@@ -33,7 +33,6 @@ export const ContainerHome = styled.div`
   .container-export {
     display: flex;
     flex-direction: column;
-    background-color: #ccc;
   }
 
   .container-video {
@@ -97,8 +96,9 @@ export const Article = styled.div`
   height: auto;
   margin-top: 50px;
 
-  background-color: #ccc;
-  color: black;
+  background-color: #031d42;
+
+  color: #fff;
 
   display: flex;
   flex-direction: row;
@@ -122,7 +122,7 @@ export const Article = styled.div`
 
   p {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     width: 90%;
   }
 `;
@@ -186,6 +186,25 @@ export const Section = styled.div`
       margin-top: 20px;
       border-radius: 12px;
     }
+  }
+`;
+
+export const Insta = styled.div`
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #031d42;
+
+  p {
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
   }
 `;
 
