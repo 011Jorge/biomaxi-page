@@ -6,25 +6,28 @@ export const ContainerHome = styled.div`
 
   background-color: #dcdcdc;
 
-  .border {
-  }
-
   .first-section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 50px 0 0 50px;
+    background-color: #ccc;
+    border-radius: 12px 0 0 12px;
   }
 
   .second-section {
     display: flex;
-    justify-content: flex-end;
-    margin: 20px 50px 0 50px;
+    justify-content: center;
+    margin: 50px 50px 0 0;
+    background-color: #ccc;
+    border-radius: 0 12px 12px 0;
   }
 
   .third-section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 50px 0 0 50px;
+    background-color: #ccc;
+    border-radius: 12px 0 0 12px;
   }
 
   .container-export {
@@ -102,14 +105,14 @@ export const Article = styled.div`
 
   p {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
     width: 90%;
   }
 `;
 
 export const Section = styled.div`
   .container-info {
-    width: 85%;
+    width: 90%;
 
     padding: 40px;
 
@@ -119,15 +122,14 @@ export const Section = styled.div`
     align-items: center;
 
     border-radius: 10px;
-    background-color: transparent;
 
     .container-text {
       font-size: 19px;
       margin-right: 35px;
       margin-left: 35px;
 
-      padding: 30px;
-      background-color: #cccc;
+      padding: 40px;
+      background-color: #dcdcdc;
       border-radius: 10px;
 
       h1 {
@@ -142,6 +144,8 @@ export const Section = styled.div`
     .container-image {
       display: flex;
       flex-direction: row;
+      margin-left: 50px;
+      margin-right: 50px;
 
       div {
         display: flex;
@@ -157,12 +161,11 @@ export const Section = styled.div`
 
     .fishTwo {
       width: 400px;
-      margin-top: 30px;
       border-radius: 12px;
     }
 
     .fishThree {
-      width: 330px;
+      width: 400px;
       margin-top: 20px;
       border-radius: 12px;
     }

@@ -11,9 +11,9 @@ import FreshFishOne from "../../images/freshwater/freshwater-fish-one.jpg";
 import FreshFishTwo from "../../images/freshwater/freshwater-fish-two.jpg";
 import FreshFishThree from "../../images/freshwater/freshwater-fish-three.jpg";
 
-import PlantOne from "../../images/aquatic-plants/plants-one.jpg";
-import PlantTwo from "../../images/aquatic-plants/plants-two.jpg";
-import PlantThree from "../../images/aquatic-plants/plants-three.jpg";
+import RodentsOne from "../../images/rodents/rodents-one.jpg";
+import RodentsTwo from "../../images/rodents/rodents-two.jpg";
+import RodentsThree from "../../images/rodents/rodents-three.jpg";
 
 import IconFood from "../../images/itens/icon-food.png";
 import IconPlant from "../../images/itens/icon-plant.png";
@@ -45,9 +45,7 @@ function Home() {
           <h3>Soluções completas para aquários & lagos.</h3>
         </div>
       </About>
-      <div>
-        <Carousel />
-      </div>
+      <Carousel />
       <Article className="article">
         <div>
           <h1>
@@ -132,15 +130,8 @@ function Home() {
       </Section>
       <Section className="third-section">
         <div className="container-info">
-          <div className="container-image">
-            <img src={PlantOne} className="fishOne" alt="fish-img" />
-            <div>
-              <img src={PlantTwo} className="fishTwo" alt="fish-img" />
-              <img src={PlantThree} className="fishThree" alt="fish-img" />
-            </div>
-          </div>
-          <div className="container-text ">
-            <h1>Plantas Áquaticas</h1>
+          <div className="container-text">
+            <h1>Roedores</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
@@ -151,6 +142,13 @@ function Home() {
               deserunt unde ut ipsum eligendi vero et, illum aspernatur
               accusamus nihil.
             </p>
+          </div>
+          <div className="container-image">
+            <img src={RodentsOne} className="fishOne" alt="fish-img" />
+            <div>
+              <img src={RodentsTwo} className="fishTwo" alt="fish-img" />
+              <img src={RodentsThree} className="fishThree" alt="fish-img" />
+            </div>
           </div>
         </div>
       </Section>
