@@ -19,6 +19,9 @@ import IconFood from "../../images/itens/icon-food.png";
 import IconPlant from "../../images/itens/icon-plant.png";
 import IconDecoration from "../../images/itens/icon-decoration.png";
 import IconEquipment from "../../images/itens/icon-equipment.png";
+import IconInstagram from "../../images/itens/icon-instagram.png";
+import IconFacebook from "../../images/itens/icon-facebook.png";
+import IconSite from "../../images/itens/icon-cart.png";
 
 import {
   About,
@@ -34,7 +37,7 @@ function Home() {
   return (
     <ContainerHome>
       <Nav />
-      <About>
+      <About id="inicio">
         <div>
           <img
             src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
@@ -70,7 +73,7 @@ function Home() {
           alt="logo-tropical"
         />
       </Marks>
-      <Article className="article">
+      <Article id="About" className="article">
         <div>
           <h1>
             <span className="span1">Sobre </span>
@@ -97,13 +100,13 @@ function Home() {
             className="container-video"
             src="https://www.youtube.com/embed/O5cEAKU7Sno"
             title="YouTube video player"
-            frameborder="0"
+            frame="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
         </div>
       </Article>
-      <Section className="first-section">
+      <Section id="Fish" className="first-section">
         <div className="container-info ">
           <div className="container-text ">
             <h1>Peixes de Água Salgada</h1>
@@ -151,7 +154,7 @@ function Home() {
           </div>
         </div>
       </Section>
-      <Section className="third-section">
+      <Section id="Rodents" className="third-section">
         <div className="container-info">
           <div className="container-text">
             <h1>Roedores</h1>
@@ -217,8 +220,57 @@ function Home() {
           </p>
         </div>
       </Accessories>
-
-      <Footer></Footer>
+      <Footer id="Contacts">
+        <div className="container-image">
+          <img
+            className=""
+            src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
+            alt="logo-image"
+          />
+        </div>
+        <div className="container">
+          <div className="container-navigation box-footer">
+            <h3>Navegação</h3>
+            <a href="#inicio">Início</a> <br />
+            <a href="#About">Sobre nós</a> <br />
+            <a href="#Fish">Peixes</a> <br />
+            <a href="#Rodents">Roedores</a> <br />
+            <a href="#Contacts">Contatos</a> <br />
+          </div>
+          <div className="container-contacts box-footer">
+            <h3>Contatos</h3>
+            <p>+5501191333-0330</p>
+            <p>
+              Av. Presidente Washington Luís, 387 - Vila Tavares <br />
+              <p>Campo Limpo Paulista - SP</p>
+            </p>
+          </div>
+          <div className="container-hrs box-footer">
+            <h3>Horário de Funcionamento</h3>
+            <p>Seg a Quin - 09:30 - 18-30</p>
+            <p>Sex - Fechado</p>
+            <p>Sáb - 09:00 - 15:00</p>
+            <p>Dom - Fechado</p>
+          </div>
+        </div>
+        <div className="social">
+          <a href="https://www.instagram.com/biomaxi.ecossistema/">
+            <img src={IconInstagram} alt="icon-instagram" />
+          </a>
+          <a href="https://www.facebook.com/biomaxi.ecossistema">
+            <img src={IconFacebook} alt="icon-facebook" />
+          </a>
+          <a href="https://www.biomaxi.com.br">
+            <img src={IconSite} alt="icon-site" />
+          </a>
+        </div>
+        <div className="container-final box-footer">
+          <p>
+            Todos os direitos reservados á <b>Biomaxi Ecossistemas</b>
+            <br /> @2023
+          </p>
+        </div>
+      </Footer>
     </ContainerHome>
   );
 }

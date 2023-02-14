@@ -88,7 +88,7 @@ export const Marks = styled.div`
 
   img {
     margin: 30px;
-    width: 200px;
+    width: 150px;
   }
 `;
 
@@ -230,7 +230,84 @@ export const Accessories = styled.div`
 
 export const Footer = styled.div`
   width: 100%;
-  height: 500px;
+  height: auto;
   margin-top: 100px;
-  background-color: #032650;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #031d42;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: 200px;
+  }
+
+  h3 {
+    color: #8cc23f;
+    font-weight: bold;
+  }
+
+  .social {
+    margin: 20px;
+    a {
+      margin: 10px;
+    }
+    img {
+      width: 30px;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+
+    p {
+      color: #fff;
+      width: 300px;
+      padding: 5px;
+      margin-top: 8px;
+    }
+  }
+
+  .box-footer {
+    text-align: center;
+    padding: 10px;
+    margin: 5px 50px;
+  }
+
+  .container-navigation {
+    width: 400px;
+    text-align: left;
+    a {
+      color: #fff;
+      font-size: 17px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .container-contacts {
+    width: 400px;
+  }
+
+  .container-hrs {
+    width: 400px;
+    text-align: right;
+  }
+
+  .container-final {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+  }
 `;
