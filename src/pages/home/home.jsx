@@ -27,6 +27,7 @@ import {
   ContainerHome,
   Footer,
   Section,
+  Marks,
 } from "./homeStyles";
 
 function Home() {
@@ -46,6 +47,29 @@ function Home() {
         </div>
       </About>
       <Carousel />
+      <Marks>
+        <img
+          src="https://sadalcon.alcon.ind.br/common/img/logo.png"
+          alt="logo-alcon"
+        />
+        <img
+          src="https://www.interago.com.br/App/Sites/5/mc/Logo%20e%20Favicon/Logo%20Poytara%20com%20Cor.png"
+          alt="logo-poytara"
+        />
+        <img
+          src="https://http2.mlstatic.com/storage/mshops-appearance-api/images/54/303273254/logo-2020061016154071000.png"
+          alt="logo-nutricon"
+        />
+        <img
+          src="http://www.labcon.com.br/en/common/img/logo.png"
+          alt="logo-labcon"
+        />
+        <img src="https://www.seachem.com/img/logo@2x.png" alt="logo-seachen" />
+        <img
+          src="http://www.tropicalimport.com.br/wp-content/uploads/2017/01/logo-tropical.png"
+          alt="logo-tropical"
+        />
+      </Marks>
       <Article className="article">
         <div>
           <h1>
@@ -70,12 +94,11 @@ function Home() {
         </div>
         <div className="container-export">
           <iframe
-            autoplay
-            loop
-            className="container-video border"
-            src="https://www.youtube.com/embed/O5cEAKU7Sno/?&autoplay=1"
+            className="container-video"
+            src="https://www.youtube.com/embed/O5cEAKU7Sno"
             title="YouTube video player"
             frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
         </div>

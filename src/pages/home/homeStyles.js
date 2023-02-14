@@ -75,6 +75,23 @@ export const About = styled.div`
   }
 `;
 
+export const Marks = styled.div`
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  img {
+    margin: 30px;
+    width: 200px;
+  }
+`;
+
 export const Article = styled.div`
   width: 100%;
   height: auto;
