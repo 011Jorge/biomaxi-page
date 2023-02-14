@@ -1,6 +1,9 @@
 import React from "react";
 
-import Nav from "../../components/navbar/navbar";
+import { GiSeatedMouse } from "react-icons/gi/index";
+import { CgProfile } from "react-icons/cg/index";
+import { FaFish, FaPhoneAlt } from "react-icons/fa/index";
+
 import Carousel from "../../components/carousel/carousel";
 
 import SaltFishOne from "../../images/saltwater/saltwater-fish-one.jpg";
@@ -32,13 +35,40 @@ import {
   Section,
   Marks,
   Insta,
+  ContainerNav,
+  ContainerNavbar,
 } from "./homeStyles";
 import Elastic from "../../components/elastic/elastic";
 
 function Home() {
   return (
     <ContainerHome>
-      <Nav />
+      <ContainerNavbar>
+        <ContainerNav>
+          <img
+            src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
+            alt="image-logo"
+          />
+          <div className="nav">
+            <a href="#">
+              <CgProfile className="icon" />
+              Sobre nós
+            </a>
+            <a href="#">
+              <FaFish className="icon" />
+              Peixes
+            </a>
+            <a href="#">
+              <GiSeatedMouse className="icon" />
+              Roedores
+            </a>
+            <a href="#">
+              <FaPhoneAlt className="icon" />
+              Contatos
+            </a>
+          </div>
+        </ContainerNav>
+      </ContainerNavbar>
       <About id="inicio">
         <div>
           <img
@@ -181,7 +211,6 @@ function Home() {
         </div>
       </Section>
       <Elastic />
-
       <Accessories>
         <div>
           <img src={IconFood} alt="icon-food" />
@@ -247,55 +276,83 @@ function Home() {
           alt="logo-tropical"
         />
       </Marks>
-      <Footer id="Contacts">
-        <div className="container-image">
-          <img
-            className=""
-            src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
-            alt="logo-image"
-          />
-        </div>
-        <div className="container">
-          <div className="container-navigation box-footer">
-            <h3>Navegação</h3>
-            <a href="#inicio">Início</a> <br />
-            <a href="#About">Sobre nós</a> <br />
-            <a href="#Fish">Peixes</a> <br />
-            <a href="#Rodents">Roedores</a> <br />
-            <a href="#Contacts">Contatos</a> <br />
+      <Footer>
+        <div class="container-footer">
+          <div class="row-footer">
+            <div class="footer-col">
+              <h4>Navegação</h4>
+              <ul>
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                  <a href="">Peixes</a>
+                </li>
+                <li>
+                  <a href="">Roedores</a>
+                </li>
+                <li>
+                  <a href="">Contatoss</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Localização</h4>
+              <ul>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Transporte</a>
+                </li>
+                <li>
+                  <a href="#">devoluções</a>
+                </li>
+                <li>
+                  <a href="#">Status De Pedido</a>
+                </li>
+                <li>
+                  <a href="#">Opções De Pagamento</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Horário de Funcionamento</h4>
+              <ul>
+                <li>
+                  <a href="#">Relógio</a>
+                </li>
+                <li>
+                  <a href="#">Saco</a>
+                </li>
+                <li>
+                  <a href="#">Calçado</a>
+                </li>
+                <li>
+                  <a href="#">Endereço</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div class="medias-socias">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="container-contacts box-footer">
-            <h3>Contatos</h3>
-            <p>+5501191333-0330</p>
-            <p>
-              Av. Presidente Washington Luís, 387 - Vila Tavares <br />
-              <p>Campo Limpo Paulista - SP</p>
-            </p>
-          </div>
-          <div className="container-hrs box-footer">
-            <h3>Horário de Funcionamento</h3>
-            <p>Seg a Quin - 09:30 - 18-30</p>
-            <p>Sex - Fechado</p>
-            <p>Sáb - 09:00 - 15:00</p>
-            <p>Dom - Fechado</p>
-          </div>
-        </div>
-        <div className="social">
-          <a href="https://www.instagram.com/biomaxi.ecossistema/">
-            <img src={IconInstagram} alt="icon-instagram" />
-          </a>
-          <a href="https://www.facebook.com/biomaxi.ecossistema">
-            <img src={IconFacebook} alt="icon-facebook" />
-          </a>
-          <a href="https://www.biomaxi.com.br">
-            <img src={IconSite} alt="icon-site" />
-          </a>
-        </div>
-        <div className="container-final box-footer">
-          <p>
-            Todos os direitos reservados á <b>Biomaxi Ecossistemas</b>
-            <br /> @2023
-          </p>
         </div>
       </Footer>
     </ContainerHome>

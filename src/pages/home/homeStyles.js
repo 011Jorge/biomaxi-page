@@ -43,6 +43,83 @@ export const ContainerHome = styled.div`
   }
 `;
 
+export const ContainerNavbar = styled.div`
+  width: 100%;
+  height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContainerNav = styled.div`
+  width: 100%;
+  height: auto;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 150px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 200px;
+  }
+
+  .nav {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 45px;
+
+    font-size: 20px;
+
+    position: relative;
+    text-decoration: none;
+
+    color: #fff;
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    .icon {
+      margin-bottom: 5px;
+    }
+  }
+
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #89c43a;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+`;
+
 export const About = styled.div`
   width: 100%;
   height: 110vh;
@@ -248,85 +325,108 @@ export const Accessories = styled.div`
 `;
 
 export const Footer = styled.div`
-  width: 100%;
-  height: auto;
-  margin-top: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #031d42;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  img {
-    width: 200px;
+  padding: 50px 0;
+  .container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
   }
-
-  h3 {
-    color: #8cc23f;
-    font-weight: bold;
-  }
-
-  .social {
-    margin: 20px;
-    a {
-      margin: 10px;
-    }
-    img {
-      width: 30px;
-    }
-  }
-
-  .container {
+  .row-footer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .footer-col ul {
+    list-style: none;
+  }
+  .footer-col ul li {
+    margin: 10px 0;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+  }
+  .footer-col .medias-socias {
+    margin-top: 30px;
+  }
+  .footer-col .medias-socias a {
+    display: inline-flex;
     align-items: center;
-    padding: 30px;
-
-    p {
-      color: #fff;
-      width: 300px;
-      padding: 5px;
-      margin-top: 8px;
-    }
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+  }
+  .footer-col .medias-socias a i {
+    font-size: 20px;
   }
 
-  .box-footer {
-    text-align: center;
+  .footer-col .medias-socias a:hover {
+    color: #415aca;
+    background-color: white;
+  }
+  .footer-col .form-sub input {
+    width: 100%;
     padding: 10px;
-    margin: 5px 50px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
   }
-
-  .container-navigation {
-    width: 400px;
-    text-align: left;
-    a {
-      color: #fff;
-      font-size: 17px;
-
-      &:hover {
-        opacity: 0.7;
-      }
-      &:active {
-        opacity: 0.2;
-      }
+  .footer-col .form-sub input::placeholder {
+    color: white;
+  }
+  .footer-col .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+  }
+  /* Responsivo */
+  @media (max-width: 800px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
     }
   }
-
-  .container-contacts {
-    width: 400px;
-  }
-
-  .container-hrs {
-    width: 400px;
-    text-align: right;
-  }
-
-  .container-final {
-    text-align: center;
-    color: #fff;
-    font-size: 17px;
+  @media (max-width: 600px) {
+    .footer-col {
+      width: 100%;
+    }
   }
 `;
