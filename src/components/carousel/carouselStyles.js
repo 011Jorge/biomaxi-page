@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100vh;
+  height: auto;
   background-color: #031d42;
   padding-top: 100px;
+  padding-bottom: 70px;
 
   margin-top: 50px;
 
   text-align: center;
+
+  .top {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
 
   h1 {
     color: #fff;
@@ -18,6 +24,8 @@ export const Container = styled.div`
   }
 
   img {
+    width: 550px;
+    height: 250px;
     border: 2px solid #fff;
     border-radius: 10px;
   }

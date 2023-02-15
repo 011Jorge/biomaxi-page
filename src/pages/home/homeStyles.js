@@ -1,33 +1,38 @@
 import styled from "styled-components";
 import background from "../../images/itens/background.jpg";
+import backAbout from "../../images/itens/backAbout.jpg";
+
+import Regua from "../../images/itens/banners/regua.png";
+import Rodape from "../../images/itens/banners/rodape.png";
 
 export const ContainerHome = styled.div`
   color: #000000;
 
-  background-color: #dcdcdc;
+  background-color: #050d23;
 
   .first-section {
     display: flex;
     justify-content: center;
     margin: 50px 0 0 50px;
-    background-color: #ccc;
-    border-radius: 12px 0 0 12px;
+    border-radius: 20px 0 0 20px;
   }
 
   .second-section {
     display: flex;
     justify-content: center;
     margin: 50px 50px 0 0;
-    background-color: #ccc;
     border-radius: 0 12px 12px 0;
   }
 
   .third-section {
     display: flex;
     justify-content: center;
-    margin: 50px 0 0 50px;
-    background-color: #ccc;
-    border-radius: 12px 0 0 12px;
+    margin: 50px 0 50px 50px;
+    border-radius: 20px 0 0 20px;
+
+    .container-text {
+      background-color: #3a6332 !important;
+    }
   }
 
   .container-export {
@@ -37,9 +42,20 @@ export const ContainerHome = styled.div`
 
   .container-video {
     width: 900px;
-    height: 500px;
+    height: 590px;
     margin: 50px;
     border-radius: 8px;
+  }
+  .regua {
+    width: 100%;
+    height: 60px;
+    background-image: url(${Regua});
+  }
+  .rodape {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-image: url(${Rodape});
   }
 `;
 
@@ -67,6 +83,12 @@ export const ContainerNav = styled.div`
 
   img {
     width: 200px;
+  }
+
+  .home {
+    background-color: #031d42;
+    border-radius: 4px;
+    filter: brightness(80%);
   }
 
   .nav {
@@ -170,20 +192,33 @@ export const ContainerMarks = styled.div`
 
 export const ContainerAbout = styled.div`
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin-top: 50px;
 
-  background-color: #031d42;
+  background-image: url(${backAbout});
+  background-size: cover;
 
   color: #fff;
 
   display: flex;
   flex-direction: row;
+  text-align: center;
   align-items: center;
 
   padding: 50px 50px 50px 100px;
 
+  .text {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
   h1 {
+    padding-top: 20px;
     margin-top: 10px;
     font-size: 60px;
     font-weight: bold;
@@ -198,9 +233,11 @@ export const ContainerAbout = styled.div`
   }
 
   p {
+    margin: 0 auto;
     font-weight: 500;
     font-size: 20px;
-    width: 90%;
+    width: 70%;
+    padding-bottom: 30px;
   }
 `;
 
@@ -222,8 +259,9 @@ export const Section = styled.div`
       margin-right: 35px;
       margin-left: 35px;
 
+      color: white;
       padding: 40px;
-      background-color: #dcdcdc;
+      background-color: #031d42;
       border-radius: 10px;
 
       h1 {
@@ -263,25 +301,6 @@ export const Section = styled.div`
       margin-top: 20px;
       border-radius: 12px;
     }
-  }
-`;
-
-export const Insta = styled.div`
-  width: 100%;
-  height: 600px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background: #031d42;
-
-  p {
-    width: 25%;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
   }
 `;
 

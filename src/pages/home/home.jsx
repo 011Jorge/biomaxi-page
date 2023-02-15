@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaFacebook,
   FaShoppingCart,
+  FaYoutube,
 } from "react-icons/fa/index";
 
 import Slide from "../../components/slide/slide";
@@ -30,9 +31,8 @@ import IconFood from "../../images/itens/icon-food.png";
 import IconPlant from "../../images/itens/icon-plant.png";
 import IconDecoration from "../../images/itens/icon-decoration.png";
 import IconEquipment from "../../images/itens/icon-equipment.png";
-import IconInstagram from "../../images/itens/icon-instagram.png";
-import IconFacebook from "../../images/itens/icon-facebook.png";
-import IconSite from "../../images/itens/icon-cart.png";
+
+import Logo from "../../images/itens/logo.png";
 
 import {
   ContainerHeader,
@@ -42,7 +42,6 @@ import {
   ContainerFooter,
   Section,
   ContainerMarks,
-  Insta,
   ContainerNav,
   ContainerNavbar,
 } from "./homeStyles";
@@ -52,10 +51,7 @@ function Home() {
     <ContainerHome>
       <ContainerNavbar>
         <ContainerNav>
-          <img
-            src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
-            alt="image-logo"
-          />
+          <img src={Logo} alt="image-logo" />
           <div className="nav">
             <a href="#About">
               <CgProfile className="icon" />
@@ -78,16 +74,14 @@ function Home() {
       </ContainerNavbar>
       <ContainerHeader id="Start">
         <div>
-          <img
-            src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
-            alt="logo-image"
-          />
+          <img src={Logo} alt="logo-image" />
           <h1>
             + de 200 Espécies <br /> Disponíveis na Loja
           </h1>
           <h3>Soluções completas para aquários & lagos.</h3>
         </div>
       </ContainerHeader>
+      <div className="regua"></div>
       <Slide />
       <ContainerMarks>
         <img
@@ -113,7 +107,7 @@ function Home() {
         />
       </ContainerMarks>
       <ContainerAbout id="About" className="container-about">
-        <div>
+        <div className="text">
           <h1>
             <span className="span1">Sobre </span>
             <span className="span2">Nós</span>
@@ -217,7 +211,7 @@ function Home() {
           </div>
         </div>
       </Section>
-      <Carousel />
+      <div className="regua"></div>
       <ContainerAccessories>
         <div>
           <img src={IconFood} alt="icon-food" />
@@ -260,50 +254,30 @@ function Home() {
           </p>
         </div>
       </ContainerAccessories>
-      <ContainerMarks>
-        <img
-          src="https://sadalcon.alcon.ind.br/common/img/logo.png"
-          alt="logo-alcon"
-        />
-        <img
-          src="https://www.interago.com.br/App/Sites/5/mc/Logo%20e%20Favicon/Logo%20Poytara%20com%20Cor.png"
-          alt="logo-poytara"
-        />
-        <img
-          src="https://http2.mlstatic.com/storage/mshops-appearance-api/images/54/303273254/logo-2020061016154071000.png"
-          alt="logo-nutricon"
-        />
-        <img
-          src="http://www.labcon.com.br/en/common/img/logo.png"
-          alt="logo-labcon"
-        />
-        <img src="https://www.seachem.com/img/logo@2x.png" alt="logo-seachen" />
-        <img
-          src="http://www.tropicalimport.com.br/wp-content/uploads/2017/01/logo-tropical.png"
-          alt="logo-tropical"
-        />
-      </ContainerMarks>
+      <div className="rodape"></div>
       <ContainerFooter id="Contacts">
         <div class="container-footer">
           <div class="row-footer">
             <div class="footer-col">
-              <img
-                src="https://images.tcdn.com.br/img/img_prod/1029189/1625102638_ativo_1.png"
-                alt="img-logo"
-                style={{ width: 200 }}
-              />
+              <img src={Logo} alt="img-logo" style={{ width: 200 }} />
               <div class="medias-socias">
-                <a href="#">
+                <a
+                  href="https://www.instagram.com/biomaxi.ecossistema/"
+                  target="_blank"
+                >
                   <FaInstagram />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.facebook.com/biomaxi.ecossistema"
+                  target="_blank"
+                >
                   <FaFacebook />
                 </a>
-                <a href="#">
-                  <FaShoppingCart />
+                <a href="https://www.youtube.com/@biomaxi5420" target="_blank">
+                  <FaYoutube />
                 </a>
-                <a href="#">
-                  <AiOutlineLink />
+                <a href="https://www.biomaxi.com.br/" target="_blank">
+                  <FaShoppingCart />
                 </a>
               </div>
             </div>
