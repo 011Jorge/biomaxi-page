@@ -1,8 +1,10 @@
 import React from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { GiSeatedMouse } from "react-icons/gi/index";
 import { CgProfile } from "react-icons/cg/index";
-import { AiOutlineLink } from "react-icons/ai/index";
 import {
   FaFish,
   FaPhoneAlt,
@@ -13,7 +15,6 @@ import {
 } from "react-icons/fa/index";
 
 import Slide from "../../components/slide/slide";
-import Carousel from "../../components/carousel/carousel";
 
 import SaltFishOne from "../../images/saltwater/saltwater-fish-one.jpg";
 import SaltFishTwo from "../../images/saltwater/saltwater-fish-two.jpg";
@@ -47,6 +48,10 @@ import {
 } from "./homeStyles";
 
 function Home() {
+  AOS.init({
+    duration: 1000,
+  });
+
   return (
     <ContainerHome>
       <ContainerNavbar>
@@ -113,19 +118,11 @@ function Home() {
             <span className="span2">Nós</span>
           </h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-            quaerat recusandae veritatis, ut, explicabo quidem obcaecati
-            similique aliquam sit hic ea quae, dicta harum at animi nobis maxime
-            ratione. Ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Repellendus accusantium sint, non sed quasi nemo veniam
-            sapiente ea, aperiam quas velit, repellat eius perferendis ipsa iste
-            debitis? Rem, repellendus illum. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Totam quis perspiciatis commodi esse
-            sequi at soluta hic sed, odio, dolorem consectetur vel reiciendis
-            in, harum atque molestias fuga laboriosam quasi! Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Veniam corrupti nihil porro
-            ea esse? Saepe asperiores eum tempore iure voluptate. Dicta nisi
-            adipisci quidem dolorum, cum possimus delectus accusamus incidunt.
+            Inaugarada no dia 06 de Agosto de 2021 na cidade de Campo Limpo
+            Paulista a Biomaxi Ecossistemas é uma empresa especializada em
+            aquarismo em geral e muitas variedades de peixes jumbo. Tudo que
+            você precisa para o hobby do aquarismo você encontra aqui. Também
+            venha conhecer e interagir na nossa área pet com roedores e coelhos.
           </p>
         </div>
         <div className="container-export">
@@ -141,24 +138,40 @@ function Home() {
       </ContainerAbout>
       <Section id="Fish" className="first-section">
         <div className="container-info ">
-          <div className="container-text ">
+          <div className="container-text " data-aos="fade-down">
             <h1>Peixes de Água Salgada</h1>
+            <h2>+ de 100 espécies</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
-              voluptatem iusto quis officia dicta veritatis, accusantium fugiat
-              nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Aperiam maxime
-              voluptas, laboriosam quasi amet alias minima magni odit veniam
-              deserunt unde ut ipsum eligendi vero et, illum aspernatur
-              accusamus nihil.
+              Temos tudo para a montagem e manutenção do seu aquário marinho,
+              desde peixes como os peixes palhaços, Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Ab minima ullam nostrum ea tempora
+              consequatur, voluptate nobis, quis atque odit explicabo nesciunt
+              animi porro amet. Totam, labore sed? Adipisci, atque?
             </p>
           </div>
-          <div className="container-image ">
-            <img src={SaltFishOne} className="fishOne" alt="fish-img" />
+          <div className="container-image">
+            <img
+              src={SaltFishOne}
+              className="fishOne"
+              alt="fish-img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
             <div>
-              <img src={SaltFishTwo} className="fishTwo" alt="fish-img" />
-              <img src={SaltFishThree} className="fishThree" alt="fish-img" />
+              <img
+                src={SaltFishTwo}
+                className="fishTwo"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <img
+                src={SaltFishThree}
+                className="fishThree"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
             </div>
           </div>
         </div>
@@ -166,13 +179,31 @@ function Home() {
       <Section className="second-section">
         <div className="container-info ">
           <div className="container-image ">
-            <img src={FreshFishOne} className="fishOne" alt="fish-img" />
+            <img
+              src={FreshFishOne}
+              className="fishOne"
+              alt="fish-img"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            />
             <div>
-              <img src={FreshFishTwo} className="fishTwo" alt="fish-img" />
-              <img src={FreshFishThree} className="fishThree" alt="fish-img" />
+              <img
+                src={FreshFishTwo}
+                className="fishTwo"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              />
+              <img
+                src={FreshFishThree}
+                className="fishThree"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
             </div>
           </div>
-          <div className="container-text ">
+          <div className="container-text " data-aos="fade-down">
             <h1>Peixes de Água Doce</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -189,7 +220,7 @@ function Home() {
       </Section>
       <Section id="Rodents" className="third-section">
         <div className="container-info">
-          <div className="container-text">
+          <div className="container-text" data-aos="fade-up">
             <h1>Roedores</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -203,17 +234,35 @@ function Home() {
             </p>
           </div>
           <div className="container-image">
-            <img src={RodentsOne} className="fishOne" alt="fish-img" />
+            <img
+              src={RodentsOne}
+              className="fishOne"
+              alt="fish-img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
             <div>
-              <img src={RodentsTwo} className="fishTwo" alt="fish-img" />
-              <img src={RodentsThree} className="fishThree" alt="fish-img" />
+              <img
+                src={RodentsTwo}
+                className="fishTwo"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <img
+                src={RodentsThree}
+                className="fishThree"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
             </div>
           </div>
         </div>
       </Section>
       <div className="regua"></div>
       <ContainerAccessories>
-        <div>
+        <div data-aos="flip-down" data-aos-delay="100">
           <img src={IconFood} alt="icon-food" />
           <h3>Rações</h3>
           <p>
@@ -223,7 +272,7 @@ function Home() {
             autem totam illum ratione.
           </p>
         </div>
-        <div>
+        <div data-aos="flip-down" data-aos-delay="200">
           <img src={IconPlant} alt="icon-plant" />
           <h3>Plantas Aquáticas</h3>
           <p>
@@ -233,7 +282,7 @@ function Home() {
             autem totam illum ratione.
           </p>
         </div>
-        <div>
+        <div data-aos="flip-down" data-aos-delay="300">
           <img src={IconDecoration} alt="icon-decoration" />
           <h3>Decorações</h3>
           <p>
@@ -243,7 +292,7 @@ function Home() {
             autem totam illum ratione.
           </p>
         </div>
-        <div>
+        <div data-aos="flip-down" data-aos-delay="400">
           <img src={IconEquipment} alt="icon-equipment" />
           <h3>Equipamentos</h3>
           <p>

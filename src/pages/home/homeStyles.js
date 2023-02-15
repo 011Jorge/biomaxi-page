@@ -15,6 +15,11 @@ export const ContainerHome = styled.div`
     justify-content: center;
     margin: 50px 0 0 50px;
     border-radius: 20px 0 0 20px;
+
+    @media (max-width: 430px) {
+      margin: 0;
+      text-align: left;
+    }
   }
 
   .second-section {
@@ -22,6 +27,19 @@ export const ContainerHome = styled.div`
     justify-content: center;
     margin: 50px 50px 0 0;
     border-radius: 0 12px 12px 0;
+
+    @media (max-width: 430px) {
+      margin: 0;
+      text-align: left;
+    }
+
+    .container-info {
+      //Responsiveness
+      @media (max-width: 1300px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   .third-section {
@@ -30,32 +48,65 @@ export const ContainerHome = styled.div`
     margin: 50px 0 50px 50px;
     border-radius: 20px 0 0 20px;
 
+    @media (max-width: 430px) {
+      margin: 0;
+      text-align: left;
+    }
+
     .container-text {
       background-color: #3a6332 !important;
     }
   }
 
   .container-export {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .container-video {
     width: 900px;
-    height: 590px;
-    margin: 50px;
+    height: 540px;
     border-radius: 8px;
+    margin-top: 30px;
+    margin-left: 20px;
+
+    //Iphone
+    @media (max-width: 430px) {
+      padding-top: 20px;
+      margin: 0 auto;
+    }
+
+    //Responsiveness
+    @media (max-width: 1300px) {
+      width: 100%;
+      height: 400px;
+    }
   }
+
   .regua {
     width: 100%;
     height: 60px;
     background-image: url(${Regua});
+    //Responsivennes Ipad
+    @media (max-width: 900px) {
+      margin-bottom: 100px;
+    }
   }
   .rodape {
     width: 100%;
     height: 60px;
     margin: 0 auto;
     background-image: url(${Rodape});
+
+    //Responsivennes Ipad
+    @media (max-width: 900px) {
+      margin-top: 200px;
+    }
+
+    @media (max-width: 430px) {
+      margin-top: 800px;
+    }
   }
 `;
 
@@ -66,6 +117,17 @@ export const ContainerNavbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  //Responsiveness Ipad
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //Iphone12
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 export const ContainerNav = styled.div`
@@ -81,20 +143,54 @@ export const ContainerNav = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  img {
-    width: 200px;
+  //Iphone12
+  @media (max-width: 400px) {
+    margin-top: 50px;
+    margin-left: 100px;
   }
 
-  .home {
-    background-color: #031d42;
-    border-radius: 4px;
-    filter: brightness(80%);
+  //Responsiveness Ipad
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
+  }
+
+  //Iphone
+  @media (max-width: 430px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //IPhone12
+  @media (max-width: 400px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: 150px;
+
+    //Iphone
+    @media (max-width: 430px) {
+      width: 100px;
+    }
   }
 
   .nav {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
+
+    //Iphone12
+    @media (max-width: 400px) {
+      margin-left: 5px !important;
+    }
+
+    //IphoneMax
+    @media (max-width: 430px) {
+      margin-left: 45px;
+    }
   }
 
   .nav a {
@@ -110,6 +206,11 @@ export const ContainerNav = styled.div`
     text-decoration: none;
 
     color: #fff;
+
+    //Iphone12
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
 
     &:active {
       opacity: 0.5;
@@ -153,9 +254,32 @@ export const ContainerHeader = styled.div`
   background-image: url(${background});
   background-repeat: no-repeat;
 
+  //Iphone
+  @media (max-width: 430px) {
+    height: 100vh;
+  }
+
   div {
     margin-top: 20em;
     margin-left: 100px;
+
+    //Iphone
+    @media (max-width: 430px) {
+      margin-left: 10%;
+      text-align: center;
+    }
+
+    //Responsiveness
+    @media (max-width: 1300px) {
+      width: 80%;
+    }
+
+    img {
+      //Iphone
+      @media (max-width: 430px) {
+        width: 200px;
+      }
+    }
   }
 
   h1 {
@@ -163,6 +287,11 @@ export const ContainerHeader = styled.div`
     margin-top: 10px;
     font-size: 80px;
     color: #fff;
+
+    //Iphone
+    @media (max-width: 430px) {
+      font-size: 30px;
+    }
   }
 
   h3 {
@@ -170,6 +299,11 @@ export const ContainerHeader = styled.div`
     font-size: 30px;
     font-weight: lighter;
     color: #fff;
+
+    //Iphone
+    @media (max-width: 430px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -184,6 +318,11 @@ export const ContainerMarks = styled.div`
 
   margin-top: 30px;
 
+  //Responsiveness Ipad
+  @media (max-width: 900px) {
+    display: none;
+  }
+
   img {
     margin: 30px;
     width: 150px;
@@ -192,7 +331,7 @@ export const ContainerMarks = styled.div`
 
 export const ContainerAbout = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin-top: 50px;
 
   background-image: url(${backAbout});
@@ -207,21 +346,39 @@ export const ContainerAbout = styled.div`
 
   padding: 50px 50px 50px 100px;
 
+  //Responsiveness
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .text {
-    width: 70%;
-    background: rgba(255, 255, 255, 0.35);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(13.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+
+    //Responsiveness
+    @media (max-width: 1300px) {
+    }
+
+    //Iphone
+    @media (max-width: 430px) {
+      background: none;
+    }
   }
 
   h1 {
-    padding-top: 20px;
+    padding-top: 25px;
     margin-top: 10px;
     font-size: 60px;
     font-weight: bold;
+
+    //Iphone
+    @media (max-width: 430px) {
+      font-size: 22px;
+    }
 
     .span1 {
       color: #8bc242;
@@ -238,6 +395,14 @@ export const ContainerAbout = styled.div`
     font-size: 20px;
     width: 70%;
     padding-bottom: 30px;
+
+    //Iphone
+    @media (max-width: 430px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 17px;
+      width: 100%;
+    }
   }
 `;
 
@@ -254,22 +419,52 @@ export const Section = styled.div`
 
     border-radius: 10px;
 
+    //Responsiveness
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     .container-text {
       font-size: 19px;
       margin-right: 35px;
       margin-left: 35px;
+      margin-top: 35px;
+      margin-bottom: 35px;
 
       color: white;
       padding: 40px;
       background-color: #031d42;
       border-radius: 10px;
 
+      //Iphone12
+      @media (max-width: 400px) {
+        width: 350px !important;
+      }
+
+      //Iphone
+      @media (max-width: 430px) {
+        width: 400px;
+      }
+
       h1 {
         font-weight: bold;
       }
+      @media (max-width: 430px) {
+        font-size: 19px;
+      }
+
+      h2 {
+        font-weight: bold;
+
+        //Iphone
+        @media (max-width: 430px) {
+          font-size: 19px;
+        }
+      }
 
       p {
-        margin-top: 10px;
+        margin-top: 15px;
       }
     }
 
@@ -278,6 +473,9 @@ export const Section = styled.div`
       flex-direction: row;
       margin-left: 50px;
       margin-right: 50px;
+
+      @media (max-width: 430px) {
+      }
 
       div {
         display: flex;
@@ -289,6 +487,10 @@ export const Section = styled.div`
       width: 400px;
       margin-right: 15px;
       border-radius: 12px;
+
+      @media (max-width: 430px) {
+        display: none;
+      }
     }
 
     .fishTwo {
@@ -300,6 +502,13 @@ export const Section = styled.div`
       width: 400px;
       margin-top: 20px;
       border-radius: 12px;
+    }
+
+    //Responsivennes Ipad
+    @media (max-width: 900px) {
+      img {
+        width: 350px !important;
+      }
     }
   }
 `;
@@ -313,6 +522,19 @@ export const ContainerAccessories = styled.div`
   justify-content: center;
   align-items: center;
 
+  //Responsiveness IPad
+  @media (max-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //Responsiveness Iphone
+  @media (max-width: 430px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
   div {
     width: 390px;
     height: 400px;
@@ -322,23 +544,43 @@ export const ContainerAccessories = styled.div`
     text-align: center;
 
     background-color: #ccc;
+    grid-template-columns: repeat(2, 1fr);
 
-    h3 {
-      margin-top: 5px;
-      margin-bottom: 10px;
-      font-weight: bold;
+    //Responsiveness IPad
+    @media (max-width: 900px) {
+      width: 350px;
+      height: 300px;
     }
 
-    p {
+    //Iphone
+    @media (max-width: 430px) {
+      width: 290px;
+      height: 320px;
       margin: 0 auto;
-      width: 80%;
     }
+  }
 
-    img {
-      width: 80px;
-      padding: 10px;
-      border-radius: 10px;
-      margin-top: 50px;
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  img {
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+
+    //Responsiveness IPad
+    @media (max-width: 900px) {
+      width: 60px;
+      margin-top: 5px;
     }
   }
 `;
@@ -346,6 +588,7 @@ export const ContainerAccessories = styled.div`
 export const ContainerFooter = styled.div`
   background-color: #031d42;
   padding: 50px 0;
+
   hr {
     color: #fff;
   }
