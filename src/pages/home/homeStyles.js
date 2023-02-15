@@ -128,6 +128,10 @@ export const ContainerNavbar = styled.div`
   @media (max-width: 400px) {
     width: 100%;
   }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const ContainerNav = styled.div`
@@ -142,6 +146,9 @@ export const ContainerNav = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+  }
 
   //Iphone12
   @media (max-width: 400px) {
@@ -181,6 +188,10 @@ export const ContainerNav = styled.div`
     margin-top: 40px;
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 800px) {
+      margin: 0 auto;
+    }
 
     //Iphone12
     @media (max-width: 400px) {
