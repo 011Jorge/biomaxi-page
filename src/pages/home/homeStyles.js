@@ -16,7 +16,7 @@ export const ContainerHome = styled.div`
     margin: 50px 0 0 50px;
     border-radius: 20px 0 0 20px;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       margin: 0;
       text-align: left;
     }
@@ -28,7 +28,7 @@ export const ContainerHome = styled.div`
     margin: 50px 50px 0 0;
     border-radius: 0 12px 12px 0;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       margin: 0;
       text-align: left;
     }
@@ -48,7 +48,7 @@ export const ContainerHome = styled.div`
     margin: 50px 0 50px 50px;
     border-radius: 20px 0 0 20px;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       margin: 0;
       text-align: left;
     }
@@ -72,7 +72,7 @@ export const ContainerHome = styled.div`
     margin-left: 20px;
 
     //Iphone
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       padding-top: 20px;
       margin: 0 auto;
     }
@@ -104,7 +104,7 @@ export const ContainerHome = styled.div`
       margin-top: 200px;
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       margin-top: 800px;
     }
   }
@@ -255,7 +255,7 @@ export const ContainerHeader = styled.div`
   background-repeat: no-repeat;
 
   //Iphone
-  @media (max-width: 430px) {
+  @media (max-width: 800px) {
     height: 100vh;
   }
 
@@ -264,7 +264,7 @@ export const ContainerHeader = styled.div`
     margin-left: 100px;
 
     //Iphone
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       margin-left: 10%;
       text-align: center;
     }
@@ -276,7 +276,7 @@ export const ContainerHeader = styled.div`
 
     img {
       //Iphone
-      @media (max-width: 430px) {
+      @media (max-width: 800px) {
         width: 200px;
       }
     }
@@ -289,7 +289,7 @@ export const ContainerHeader = styled.div`
     color: #fff;
 
     //Iphone
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       font-size: 30px;
     }
   }
@@ -345,6 +345,10 @@ export const ContainerAbout = styled.div`
   align-items: center;
 
   padding: 50px 50px 50px 100px;
+
+  @media (max-width: 800px) {
+    margin: 0 auto;
+  }
 
   //Responsiveness
   @media (max-width: 1300px) {
@@ -447,6 +451,11 @@ export const Section = styled.div`
         width: 400px;
       }
 
+      //Smartphone
+      @media (max-width: 800px) {
+        width: 350px !important;
+      }
+
       h1 {
         font-weight: bold;
       }
@@ -474,7 +483,10 @@ export const Section = styled.div`
       margin-left: 50px;
       margin-right: 50px;
 
-      @media (max-width: 430px) {
+      //Smartphone
+      @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
       }
 
       div {
@@ -487,6 +499,11 @@ export const Section = styled.div`
       width: 400px;
       margin-right: 15px;
       border-radius: 12px;
+
+      //Smartphone
+      @media (max-width: 800px) {
+        display: none;
+      }
 
       @media (max-width: 430px) {
         display: none;
@@ -529,7 +546,7 @@ export const ContainerAccessories = styled.div`
   }
 
   //Responsiveness Iphone
-  @media (max-width: 430px) {
+  @media (max-width: 800px) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -553,7 +570,7 @@ export const ContainerAccessories = styled.div`
     }
 
     //Iphone
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
       width: 290px;
       height: 320px;
       margin: 0 auto;
