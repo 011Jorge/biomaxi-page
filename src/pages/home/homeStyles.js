@@ -35,7 +35,7 @@ export const ContainerHome = styled.div`
 
     .container-info {
       //Responsiveness
-      @media (max-width: 1300px) {
+      @media (max-width: 1550px) {
         display: flex;
         flex-direction: column-reverse;
       }
@@ -73,14 +73,19 @@ export const ContainerHome = styled.div`
 
     //Iphone
     @media (max-width: 800px) {
+    }
+
+    @media (max-width: 1300px) {
       padding-top: 20px;
       margin: 0 auto;
+      width: 300px !important;
+      height: 400px !important;
     }
 
     //Responsiveness
-    @media (max-width: 1300px) {
-      width: 100%;
-      height: 400px;
+    @media (max-width: 1550px) {
+      width: 650px;
+      height: 300px;
     }
   }
 
@@ -119,7 +124,7 @@ export const ContainerNavbar = styled.div`
   justify-content: center;
 
   //Responsiveness Ipad
-  @media (max-width: 900px) {
+  @media (max-width: 1050px) {
     display: flex;
     flex-direction: column;
   }
@@ -271,8 +276,12 @@ export const ContainerHeader = styled.div`
   }
 
   div {
-    margin-top: 20em;
+    margin-top: 300px;
     margin-left: 100px;
+
+    @media (max-width: 1550px) {
+      margin-top: 200px;
+    }
 
     //Iphone
     @media (max-width: 800px) {
@@ -280,14 +289,13 @@ export const ContainerHeader = styled.div`
       text-align: center;
     }
 
-    //Responsiveness
-    @media (max-width: 1300px) {
-      width: 80%;
-    }
-
     img {
       //Iphone
       @media (max-width: 800px) {
+        width: 200px;
+      }
+
+      @media (max-width: 1550px) {
         width: 200px;
       }
     }
@@ -301,7 +309,11 @@ export const ContainerHeader = styled.div`
 
     //Iphone
     @media (max-width: 800px) {
-      font-size: 30px;
+      font-size: 30px !important;
+    }
+
+    @media (max-width: 1550px) {
+      font-size: 60px;
     }
   }
 
@@ -313,7 +325,7 @@ export const ContainerHeader = styled.div`
 
     //Iphone
     @media (max-width: 430px) {
-      font-size: 20px;
+      font-size: 20px !important;
     }
   }
 `;
@@ -330,7 +342,7 @@ export const ContainerMarks = styled.div`
   margin-top: 30px;
 
   //Responsiveness Ipad
-  @media (max-width: 900px) {
+  @media (max-width: 1210px) {
     display: none;
   }
 
@@ -341,7 +353,6 @@ export const ContainerMarks = styled.div`
 `;
 
 export const ContainerAbout = styled.div`
-  width: 100%;
   height: auto;
   margin-top: 50px;
 
@@ -352,20 +363,27 @@ export const ContainerAbout = styled.div`
 
   display: flex;
   flex-direction: row;
+  justify-content: center;
   text-align: center;
   align-items: center;
 
   padding: 50px 50px 50px 100px;
 
-  @media (max-width: 800px) {
-    margin: 0 auto;
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 100px 0;
+  }
+
+  /* @media (max-width: 800px) {
+    margin: 0 !important;
   }
 
   //Responsiveness
   @media (max-width: 1300px) {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .text {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -374,14 +392,20 @@ export const ContainerAbout = styled.div`
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 
-    //Responsiveness
     @media (max-width: 1300px) {
+      width: 350px !important;
     }
 
-    //Iphone
+    /* //Iphone
     @media (max-width: 430px) {
       background: none;
     }
+
+    //Iphone12
+    @media (max-width: 450px) {
+      margin: 0 auto !important;
+      width: 310px !important;
+    } */
   }
 
   h1 {
@@ -390,10 +414,19 @@ export const ContainerAbout = styled.div`
     font-size: 60px;
     font-weight: bold;
 
-    //Iphone
+    @media (max-width: 1300px) {
+      font-size: 32px;
+    }
+
+    /* //Iphone
     @media (max-width: 430px) {
       font-size: 22px;
     }
+
+    //Responsiveness
+    @media (max-width: 1550px) {
+      font-size: 28px;
+    } */
 
     .span1 {
       color: #8bc242;
@@ -411,6 +444,11 @@ export const ContainerAbout = styled.div`
     width: 70%;
     padding-bottom: 30px;
 
+    @media (max-width: 1300px) {
+      font-size: 15px;
+    }
+
+    /* 
     //Iphone
     @media (max-width: 430px) {
       padding-left: 10px;
@@ -418,6 +456,11 @@ export const ContainerAbout = styled.div`
       font-size: 17px;
       width: 100%;
     }
+
+    //Responsiveness
+    @media (max-width: 1550px) {
+      font-size: 20px;
+    } */
   }
 `;
 
@@ -435,7 +478,7 @@ export const Section = styled.div`
     border-radius: 10px;
 
     //Responsiveness
-    @media (max-width: 1300px) {
+    @media (max-width: 1550px) {
       display: flex;
       flex-direction: column;
     }

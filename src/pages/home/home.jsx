@@ -118,7 +118,7 @@ function Home() {
             <span className="span2">Nós</span>
           </h1>
           <p>
-            Inaugarada no dia 06 de Agosto de 2021 na cidade de Campo Limpo
+            Inaugurada no dia 06 de Agosto de 2021 na cidade de Campo Limpo
             Paulista a Biomaxi Ecossistemas é uma empresa especializada em
             aquarismo em geral e muitas variedades de peixes jumbo. Tudo que
             você precisa para o hobby do aquarismo você encontra aqui. Também
@@ -205,6 +205,7 @@ function Home() {
           </div>
           <div className="container-text " data-aos="fade-down">
             <h1>Peixes de Água Doce</h1>
+            <h2>+ de 100 espécies</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
@@ -266,40 +267,39 @@ function Home() {
           <img src={IconFood} alt="icon-food" />
           <h3>Rações</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            quia! Atque repudiandae recusandae quidem cum laboriosam iure
-            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
-            autem totam illum ratione.
+            As melhores marcas estão na Biomaxi, temos variedade de rações, do
+            tipo floco e granulada, até rações para carnívoros e peixes de
+            fundo. <br /> Temos também <b>alimento vivo</b> para complementar a
+            alimentação dos seus animais.
           </p>
         </div>
         <div data-aos="flip-down" data-aos-delay="200">
           <img src={IconPlant} alt="icon-plant" />
           <h3>Plantas Aquáticas</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            quia! Atque repudiandae recusandae quidem cum laboriosam iure
-            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
-            autem totam illum ratione.
+            Se você curte um aquário plantado, você está no lugar certo! aqui na
+            Biomaxi temos uma enorme variedade de plantas aquáticas, desde low
+            tech até as high tech, para deixar o seu aquário ainda mais natural.
           </p>
         </div>
         <div data-aos="flip-down" data-aos-delay="300">
           <img src={IconDecoration} alt="icon-decoration" />
           <h3>Decorações</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            quia! Atque repudiandae recusandae quidem cum laboriosam iure
-            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
-            autem totam illum ratione.
+            Aqui você encontra todo tipo de decoração para deixar seu aquário
+            com a sua cara! <br />
+            substratos, rochas, pedras, troncos, plantas artifícias, navios,
+            tocas e vasta variedade de objetos decoradores.
           </p>
         </div>
         <div data-aos="flip-down" data-aos-delay="400">
           <img src={IconEquipment} alt="icon-equipment" />
           <h3>Equipamentos</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            quia! Atque repudiandae recusandae quidem cum laboriosam iure
-            obcaecati ipsa officiis nam, nesciunt dolorem molestias error libero
-            autem totam illum ratione.
+            Temos todos os tipos de equipamento e soluções para aquários
+            marinhos e água doce, desde filtros, luminárias, termômetros até
+            alimentadores automáticos. Temos testes de ph, nitrito, amônia e
+            anticloro e muito mais!
           </p>
         </div>
       </ContainerAccessories>
