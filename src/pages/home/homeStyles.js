@@ -285,8 +285,9 @@ export const ContainerHeader = styled.div`
 
     //Iphone
     @media (max-width: 800px) {
-      margin-left: 10%;
+      margin: 0 auto;
       text-align: center;
+      padding-top: 60%;
     }
 
     img {
@@ -309,7 +310,8 @@ export const ContainerHeader = styled.div`
 
     //Iphone
     @media (max-width: 800px) {
-      font-size: 30px !important;
+      margin-top: 20px;
+      font-size: 28px !important;
     }
 
     @media (max-width: 1550px) {
@@ -325,7 +327,9 @@ export const ContainerHeader = styled.div`
 
     //Iphone
     @media (max-width: 430px) {
-      font-size: 20px !important;
+      margin: 0 auto;
+      font-size: 17px !important;
+      width: 200px;
     }
   }
 `;
