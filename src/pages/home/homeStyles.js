@@ -326,7 +326,7 @@ export const ContainerHeader = styled.div`
     color: #fff;
 
     //Iphone
-    @media (max-width: 430px) {
+    @media (max-width: 600px) {
       margin: 0 auto;
       font-size: 17px !important;
       width: 200px;
