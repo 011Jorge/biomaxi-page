@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,6 +13,15 @@ import {
   FaShoppingCart,
   FaYoutube,
 } from "react-icons/fa/index";
+
+import {
+  CCollapse,
+  CContainer,
+  CNavbar,
+  CNavbarNav,
+  CNavbarToggler,
+  CNavLink,
+} from "@coreui/react";
 
 import Slide from "../../components/slide/slide";
 
@@ -43,40 +52,63 @@ import {
   ContainerFooter,
   Section,
   ContainerMarks,
-  ContainerNav,
-  ContainerNavbar,
 } from "./homeStyles";
 
 function Home() {
+  const [visible, setVisible] = useState(false);
+
   AOS.init({
     duration: 1000,
   });
 
   return (
     <ContainerHome>
-      <ContainerNavbar>
-        <ContainerNav>
-          <img src={Logo} alt="image-logo" />
-          <div className="nav">
-            <a href="#About">
-              <CgProfile className="icon" />
-              Sobre nós
-            </a>
-            <a href="#Fish">
-              <FaFish className="icon" />
-              Peixes
-            </a>
-            <a href="#Rodents">
-              <GiSeatedMouse className="icon" />
-              Roedores
-            </a>
-            <a href="#Contacts">
-              <FaPhoneAlt className="icon" />
-              Contatos
-            </a>
-          </div>
-        </ContainerNav>
-      </ContainerNavbar>
+      <CNavbar
+        expand="lg"
+        placement="fixed-top"
+        style={{ backgroundColor: "#031d42" }}
+      >
+        <CContainer
+          fluid
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src={Logo}
+            style={{ width: 150, marginLeft: 100 }}
+            alt="logo-img"
+          />
+          {/* <CNavbarBrand href="#">Navbar</CNavbarBrand> */}
+          <CNavbarToggler
+            aria-label="Toggle navigation"
+            aria-expanded={visible}
+            onClick={() => setVisible(!visible)}
+          />
+          <CCollapse className="navbar-collapse" visible={visible}>
+            <CNavbarNav style={{ marginLeft: "60%" }} component="nav">
+              <CNavLink className="a" href="#About">
+                <CgProfile /> Sobre nós
+              </CNavLink>
+              <CNavLink className="a" href="#Fish">
+                <FaFish />
+                Peixes
+              </CNavLink>
+              <CNavLink className="a" href="#Rodents">
+                <GiSeatedMouse />
+                Roedores
+              </CNavLink>
+              <CNavLink className="a" href="#Contacts">
+                <FaPhoneAlt />
+                Contatos
+              </CNavLink>
+            </CNavbarNav>
+          </CCollapse>
+        </CContainer>
+      </CNavbar>
       <ContainerHeader id="Start">
         <div>
           <img src={Logo} alt="logo-image" />
@@ -351,13 +383,21 @@ function Home() {
               <h4>Informações</h4>
               <ul>
                 <li>
-                  <p>01191333-0330</p>
+                  <a
+                    href="https://wa.me/5511913330330?text=Ol%C3%A1,%20voc%C3%AA%20poderia%20me%20falar%20mais%20sobre%20seus%20servi%C3%A7os?"
+                    target="_blank"
+                  >
+                    01191333-0330
+                  </a>
                 </li>
-                <li>
-                  <p>Av. Presidente Washington Luís, 387</p>
-                </li>
-                <li>
-                  <p>Campo Limpo Paulista</p>
+                <li style={{ width: 500 }}>
+                  <a
+                    href="https://goo.gl/maps/DqZGJthapAzuJqxR9"
+                    target="_blank"
+                  >
+                    Av. Presidente Washington Luís, 387 - Campo Limpo Paulista,
+                    SP
+                  </a>
                 </li>
               </ul>
             </div>

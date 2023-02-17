@@ -10,6 +10,55 @@ export const ContainerHome = styled.div`
 
   background-color: #050d23;
 
+  .a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px !important;
+
+    font-size: 20px;
+
+    position: relative;
+    text-decoration: none;
+
+    color: #fff;
+
+    //Iphone12
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    .icon {
+      margin-bottom: 5px;
+    }
+  }
+
+  .a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #89c43a;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
   .first-section {
     display: flex;
     justify-content: center;
@@ -31,6 +80,12 @@ export const ContainerHome = styled.div`
     @media (max-width: 800px) {
       margin: 0;
       text-align: left;
+    }
+
+    .container-text {
+      border-radius: 35px !important;
+      background: #031d42 !important;
+      box-shadow: -34px 34px 59px #021735, 34px -34px 59px #04234f !important;
     }
 
     .container-info {
@@ -55,6 +110,8 @@ export const ContainerHome = styled.div`
 
     .container-text {
       background-color: #3a6332 !important;
+      border-radius: 35px !important;
+      box-shadow: 17px 17px 34px #26421f, -17px -17px 34px #38642f !important;
     }
   }
 
@@ -115,150 +172,6 @@ export const ContainerHome = styled.div`
   }
 `;
 
-export const ContainerNavbar = styled.div`
-  width: 100%;
-  height: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  //Responsiveness Ipad
-  @media (max-width: 1050px) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  //Iphone12
-  @media (max-width: 400px) {
-    width: 100%;
-  }
-
-  @media (max-width: 800px) {
-    display: none;
-  }
-`;
-
-export const ContainerNav = styled.div`
-  width: 100%;
-  height: auto;
-
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-top: 150px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 800px) {
-  }
-
-  //Iphone12
-  @media (max-width: 400px) {
-    margin-top: 50px;
-    margin-left: 100px;
-  }
-
-  //Responsiveness Ipad
-  @media (max-width: 900px) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 250px;
-  }
-
-  //Iphone
-  @media (max-width: 430px) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  //IPhone12
-  @media (max-width: 400px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  img {
-    width: 150px;
-
-    //Iphone
-    @media (max-width: 430px) {
-      width: 100px;
-    }
-  }
-
-  .nav {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-
-    @media (max-width: 800px) {
-      margin: 0 auto;
-    }
-
-    //Iphone12
-    @media (max-width: 400px) {
-      margin-left: 5px !important;
-    }
-
-    //IphoneMax
-    @media (max-width: 430px) {
-      margin-left: 45px;
-    }
-  }
-
-  .nav a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 10px 45px;
-
-    font-size: 20px;
-
-    position: relative;
-    text-decoration: none;
-
-    color: #fff;
-
-    //Iphone12
-    @media (max-width: 400px) {
-      font-size: 18px;
-    }
-
-    &:active {
-      opacity: 0.5;
-    }
-
-    .icon {
-      margin-bottom: 5px;
-    }
-  }
-
-  a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    background-color: #89c43a;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-`;
-
 export const ContainerHeader = styled.div`
   width: 100%;
   height: 110vh;
@@ -291,6 +204,18 @@ export const ContainerHeader = styled.div`
     }
 
     img {
+      animation: ani-img 1.2s ease-in-out;
+
+      @keyframes ani-img {
+        from {
+          transform: translateY(500px);
+          opacity: 0.1;
+        }
+        to {
+          transform: translateX(0px);
+        }
+      }
+
       //Iphone
       @media (max-width: 800px) {
         width: 200px;
@@ -308,6 +233,18 @@ export const ContainerHeader = styled.div`
     font-size: 80px;
     color: #fff;
 
+    animation: ani-h1 1.2s ease-in-out;
+
+    @keyframes ani-h1 {
+      from {
+        transform: translateY(700px);
+        opacity: 0.1;
+      }
+      to {
+        transform: translateX(0px);
+      }
+    }
+
     //Iphone
     @media (max-width: 800px) {
       margin-top: 20px;
@@ -324,6 +261,18 @@ export const ContainerHeader = styled.div`
     font-size: 30px;
     font-weight: lighter;
     color: #fff;
+
+    animation: ani-h3 1.2s ease-in-out;
+
+    @keyframes ani-h3 {
+      from {
+        transform: translateY(800px);
+        opacity: 0.3;
+      }
+      to {
+        transform: translateX(0px);
+      }
+    }
 
     //Iphone
     @media (max-width: 600px) {
@@ -498,6 +447,10 @@ export const Section = styled.div`
       padding: 40px;
       background-color: #031d42;
       border-radius: 10px;
+
+      border-radius: 35px;
+      background: #031d42;
+      box-shadow: 34px 34px 59px #021735, -34px -34px 59px #04234f;
 
       //Iphone12
       @media (max-width: 400px) {
