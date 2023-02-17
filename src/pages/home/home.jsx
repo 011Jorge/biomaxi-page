@@ -390,7 +390,7 @@ function Home() {
                     01191333-0330
                   </a>
                 </li>
-                <li style={{ width: 500 }}>
+                <li>
                   <a
                     href="https://goo.gl/maps/DqZGJthapAzuJqxR9"
                     target="_blank"
