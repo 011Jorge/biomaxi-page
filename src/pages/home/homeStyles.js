@@ -15,7 +15,7 @@ export const ContainerHome = styled.div`
     flex-direction: column;
     align-items: center;
 
-    padding: 30px !important;
+    padding: 20px !important;
 
     font-size: 20px;
 
@@ -98,6 +98,42 @@ export const ContainerHome = styled.div`
   }
 
   .third-section {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 50px;
+    border-radius: 20px 0 0 20px;
+
+    @media (max-width: 800px) {
+      margin: 0;
+      text-align: left;
+    }
+
+    .container-text {
+      background-color: #3a6332 !important;
+      border-radius: 35px !important;
+      box-shadow: 17px 17px 34px #26421f, -17px -17px 34px #38642f !important;
+    }
+  }
+
+  .four-section {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 50px;
+    border-radius: 20px 0 0 20px;
+
+    @media (max-width: 800px) {
+      margin: 0;
+      text-align: left;
+    }
+
+    .container-text {
+      background-color: #3a6332 !important;
+      border-radius: 35px !important;
+      box-shadow: 17px 17px 34px #26421f, -17px -17px 34px #38642f !important;
+    }
+  }
+
+  .five-section {
     display: flex;
     justify-content: center;
     margin: 50px 0 50px 50px;
@@ -204,6 +240,8 @@ export const ContainerHeader = styled.div`
     }
 
     img {
+      width: 400px;
+
       animation: ani-img 1.2s ease-in-out;
 
       @keyframes ani-img {

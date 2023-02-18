@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { GiSeatedMouse } from "react-icons/gi/index";
+import { GiSeatedMouse, GiEgyptianBird } from "react-icons/gi/index";
 import { CgProfile } from "react-icons/cg/index";
 import {
   FaFish,
@@ -12,6 +12,7 @@ import {
   FaFacebook,
   FaShoppingCart,
   FaYoutube,
+  FaFrog,
 } from "react-icons/fa/index";
 
 import {
@@ -36,6 +37,10 @@ import FreshFishThree from "../../images/freshwater/freshwater-fish-three.jpg";
 import RodentsOne from "../../images/rodents/rodents-one.jpg";
 import RodentsTwo from "../../images/rodents/rodents-two.jpg";
 import RodentsThree from "../../images/rodents/rodents-three.jpg";
+
+import Birds01 from "../../images/birds/birds01.jpg";
+
+import Amphibian01 from "../../images/amphibian/amphibian01.jpg";
 
 import IconFood from "../../images/itens/icon-food.png";
 import IconPlant from "../../images/itens/icon-plant.png";
@@ -101,6 +106,14 @@ function Home() {
                 <GiSeatedMouse />
                 Roedores
               </CNavLink>
+              <CNavLink className="a" href="#Anfibios">
+                <FaFrog />
+                Anfíbios
+              </CNavLink>
+              <CNavLink className="a" href="#Anfibios">
+                <GiEgyptianBird />
+                Aves
+              </CNavLink>
               <CNavLink className="a" href="#Contacts">
                 <FaPhoneAlt />
                 Contatos
@@ -133,7 +146,7 @@ function Home() {
       <Slide />
       <ContainerMarks>
         <img
-          src="https://sadalcon.alcon.ind.br/common/img/logo.png"
+          src="https://superiorpets.net/wp-content/uploads/2015/11/SunSunlogo.png"
           alt="logo-alcon"
         />
         <img
@@ -144,13 +157,9 @@ function Home() {
           src="https://http2.mlstatic.com/storage/mshops-appearance-api/images/54/303273254/logo-2020061016154071000.png"
           alt="logo-nutricon"
         />
-        <img
-          src="http://www.labcon.com.br/en/common/img/logo.png"
-          alt="logo-labcon"
-        />
         <img src="https://www.seachem.com/img/logo@2x.png" alt="logo-seachen" />
         <img
-          src="http://www.tropicalimport.com.br/wp-content/uploads/2017/01/logo-tropical.png"
+          src="https://sadalcon.alcon.ind.br/common/img/logo.png"
           alt="logo-tropical"
         />
       </ContainerMarks>
@@ -262,10 +271,10 @@ function Home() {
           </div>
         </div>
       </Section>
-      <Section id="Rodents" className="third-section">
+      <Section id="Anfibios" className="third-section">
         <div className="container-info">
           <div className="container-text" data-aos="fade-up">
-            <h1>Roedores</h1>
+            <h1>Anfíbios</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
@@ -280,6 +289,91 @@ function Home() {
           <div className="container-image">
             <img
               src={RodentsOne}
+              className="fishOne"
+              alt="fish-img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+            <div>
+              <img
+                src={Amphibian01}
+                className="fishTwo"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <img
+                src={RodentsThree}
+                className="fishThree"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section id="Rodents" className="four-section">
+        <div className="container-info">
+          <div className="container-image">
+            <img
+              src={RodentsOne}
+              className="fishOne"
+              alt="fish-img"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+            <div>
+              <img
+                src={RodentsTwo}
+                className="fishTwo"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <img
+                src={RodentsThree}
+                className="fishThree"
+                alt="fish-img"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+            </div>
+          </div>
+          <div className="container-text" data-aos="fade-up">
+            <h1>Roedores</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
+              voluptatem iusto quis officia dicta veritatis, accusantium fugiat
+              nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Aperiam maxime
+              voluptas, laboriosam quasi amet alias minima magni odit veniam
+              deserunt unde ut ipsum eligendi vero et, illum aspernatur
+              accusamus nihil.
+            </p>
+          </div>
+        </div>
+      </Section>
+      <Section id="Aves" className="five-section">
+        <div className="container-info">
+          <div className="container-text" data-aos="fade-up">
+            <h1>Aves</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
+              voluptatem iusto quis officia dicta veritatis, accusantium fugiat
+              nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Aperiam maxime
+              voluptas, laboriosam quasi amet alias minima magni odit veniam
+              deserunt unde ut ipsum eligendi vero et, illum aspernatur
+              accusamus nihil.
+            </p>
+          </div>
+
+          <div className="container-image">
+            <img
+              src={Birds01}
               className="fishOne"
               alt="fish-img"
               data-aos="fade-up"
