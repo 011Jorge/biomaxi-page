@@ -77,7 +77,11 @@ function Home() {
             alignItems: "center",
           }}
         >
-          <img src={Logo} style={{ width: 150 }} alt="logo-img" />
+          <img
+            src={Logo}
+            style={{ width: 150, marginLeft: 100 }}
+            alt="logo-img"
+          />
           {/* <CNavbarBrand href="#">Navbar</CNavbarBrand> */}
           <CNavbarToggler
             aria-label="Toggle navigation"
