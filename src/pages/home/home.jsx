@@ -274,7 +274,7 @@ function Home() {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
-              voluptatem iusto quis officia dicta veritatis, accusantium fugiat
+              voluptatem iusto quis offiia dicta veritatis, accusantium fugiat
               nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
               dolor sit amet consectetur, adipisicing elit. Aperiam maxime
               voluptas, laboriosam quasi amet alias minima magni odit veniam
