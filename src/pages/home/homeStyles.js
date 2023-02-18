@@ -10,6 +10,25 @@ export const ContainerHome = styled.div`
 
   background-color: #050d23;
 
+  .navbar-nav-toglle {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: right !important;
+    margin-left: 50%;
+
+    @media (max-width: 1800px) {
+      margin-left: 40%;
+    }
+
+    @media (max-width: 1550px) {
+      margin-left: 30%;
+    }
+
+    @media (max-width: 1270px) {
+      margin-left: 8%;
+    }
+  }
+
   .a {
     display: flex;
     flex-direction: column;

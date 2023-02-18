@@ -74,27 +74,15 @@ function Home() {
         placement="fixed-top"
         style={{ backgroundColor: "#031d42" }}
       >
-        <CContainer
-          fluid
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <img
-            src={Logo}
-            style={{ width: 150, marginLeft: 100 }}
-            alt="logo-img"
-          />
+        <CContainer fluid>
+          <img src={Logo} style={{ width: 150 }} alt="logo-img" />
           <CNavbarToggler
             aria-label="Toggle navigation"
             aria-expanded={visible}
             onClick={() => setVisible(!visible)}
           />
           <CCollapse className="navbar-collapse" visible={visible}>
-            <CNavbarNav style={{ marginLeft: "50%" }} component="nav">
+            <CNavbarNav className="navbar-nav-toglle" component="nav">
               <CNavLink className="a" href="#About">
                 <CgProfile /> Sobre nós
               </CNavLink>
@@ -160,7 +148,7 @@ function Home() {
         <img src="https://www.seachem.com/img/logo@2x.png" alt="logo-seachen" />
         <img
           src="https://sadalcon.alcon.ind.br/common/img/logo.png"
-          alt="logo-tropical"
+          alt="logo-alcon"
         />
       </ContainerMarks>
       <ContainerAbout id="About" className="container-about">
