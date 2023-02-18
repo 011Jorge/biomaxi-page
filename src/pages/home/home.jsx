@@ -77,11 +77,7 @@ function Home() {
             alignItems: "center",
           }}
         >
-          <img
-            src={Logo}
-            style={{ width: 150, marginLeft: 100 }}
-            alt="logo-img"
-          />
+          <img src={Logo} style={{ width: 150 }} alt="logo-img" />
           {/* <CNavbarBrand href="#">Navbar</CNavbarBrand> */}
           <CNavbarToggler
             aria-label="Toggle navigation"
@@ -89,7 +85,7 @@ function Home() {
             onClick={() => setVisible(!visible)}
           />
           <CCollapse className="navbar-collapse" visible={visible}>
-            <CNavbarNav style={{ marginLeft: "60%" }} component="nav">
+            <CNavbarNav style={{ marginLeft: "50%" }} component="nav">
               <CNavLink className="a" href="#About">
                 <CgProfile /> Sobre nós
               </CNavLink>
