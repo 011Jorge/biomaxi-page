@@ -184,7 +184,7 @@ function Home() {
         <div className="container-info ">
           <div className="container-text " data-aos="fade-down">
             <h1>Peixes de Água Salgada</h1>
-            <h2>+ de 100 espécies</h2>
+            <h2>+ de 200 espécies</h2>
             <p>
               Temos tudo para a montagem e manutenção do seu aquário marinho,
               desde peixes como os peixes palhaços, Lorem ipsum dolor sit amet
@@ -216,6 +216,7 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-delay="300"
               />
+              100
             </div>
           </div>
         </div>
@@ -249,7 +250,7 @@ function Home() {
           </div>
           <div className="container-text " data-aos="fade-down">
             <h1>Peixes de Água Doce</h1>
-            <h2>+ de 100 espécies</h2>
+            <h2>+ de 300 espécies</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
