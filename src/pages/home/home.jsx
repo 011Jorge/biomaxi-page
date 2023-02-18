@@ -41,6 +41,7 @@ import IconFood from "../../images/itens/icon-food.png";
 import IconPlant from "../../images/itens/icon-plant.png";
 import IconDecoration from "../../images/itens/icon-decoration.png";
 import IconEquipment from "../../images/itens/icon-equipment.png";
+import IconWhats from "../../images/itens/icon-whats.png";
 
 import Logo from "../../images/itens/logo.png";
 
@@ -82,7 +83,6 @@ function Home() {
             style={{ width: 150, marginLeft: 100 }}
             alt="logo-img"
           />
-          {/* <CNavbarBrand href="#">Navbar</CNavbarBrand> */}
           <CNavbarToggler
             aria-label="Toggle navigation"
             aria-expanded={visible}
@@ -105,6 +105,17 @@ function Home() {
                 <FaPhoneAlt />
                 Contatos
               </CNavLink>
+              <CNavLink
+                className="a"
+                href="https://wa.me/5511913330330?text=Ol%C3%A1,%20voc%C3%AA%20poderia%20me%20falar%20mais%20sobre%20seus%20servi%C3%A7os?"
+                target="_blank"
+              >
+                <img
+                  src={IconWhats}
+                  style={{ width: 40 }}
+                  alt="icon-whatsapp"
+                />
+              </CNavLink>
             </CNavbarNav>
           </CCollapse>
         </CContainer>
@@ -113,7 +124,7 @@ function Home() {
         <div>
           <img src={Logo} alt="logo-image" />
           <h1>
-            + de 200 Espécies <br /> Disponíveis na Loja
+            + de 500 Espécies <br /> Disponíveis na Loja
           </h1>
           <h3>Soluções completas para aquários & lagos.</h3>
         </div>
