@@ -34,13 +34,17 @@ import FreshFishOne from "../../images/freshwater/freshwater-fish-one.jpg";
 import FreshFishTwo from "../../images/freshwater/freshwater-fish-two.jpg";
 import FreshFishThree from "../../images/freshwater/freshwater-fish-three.jpg";
 
-import RodentsOne from "../../images/rodents/rodents-one.jpg";
-import RodentsTwo from "../../images/rodents/rodents-two.jpg";
-import RodentsThree from "../../images/rodents/rodents-three.jpg";
+import RodentsOne from "../../images/rodents/rodents01.jpg";
+import RodentsTwo from "../../images/rodents/rodents02.jpg";
+import RodentsThree from "../../images/rodents/rodents03.jpg";
 
 import Birds01 from "../../images/birds/birds01.jpg";
+import Birds02 from "../../images/birds/birds02.jpg";
+import Birds03 from "../../images/birds/birds03.jpg";
 
 import Amphibian01 from "../../images/amphibian/amphibian01.jpg";
+import Amphibian02 from "../../images/amphibian/amphibian02.jpg";
+import Amphibian03 from "../../images/amphibian/amphibian03.jpg";
 
 import IconFood from "../../images/itens/icon-food.png";
 import IconPlant from "../../images/itens/icon-plant.png";
@@ -123,7 +127,7 @@ function Home() {
       </CNavbar>
       <ContainerHeader id="Start">
         <div>
-          <img src={Logo} alt="logo-image" />
+          <img src={Logo} style={{ marginLeft: 100 }} alt="logo-image" />
           <h1>
             + de 500 Espécies <br /> Disponíveis na Loja
           </h1>
@@ -261,7 +265,11 @@ function Home() {
       </Section>
       <Section id="Anfibios" className="third-section">
         <div className="container-info">
-          <div className="container-text" data-aos="fade-up">
+          <div
+            className="container-text"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <h1>Anfíbios</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -276,7 +284,7 @@ function Home() {
           </div>
           <div className="container-image">
             <img
-              src={RodentsOne}
+              src={Amphibian01}
               className="fishOne"
               alt="fish-img"
               data-aos="fade-up"
@@ -284,14 +292,14 @@ function Home() {
             />
             <div>
               <img
-                src={Amphibian01}
+                src={Amphibian02}
                 className="fishTwo"
                 alt="fish-img"
                 data-aos="fade-up"
                 data-aos-delay="200"
               />
               <img
-                src={RodentsThree}
+                src={Amphibian03}
                 className="fishThree"
                 alt="fish-img"
                 data-aos="fade-up"
@@ -328,7 +336,11 @@ function Home() {
               />
             </div>
           </div>
-          <div className="container-text" data-aos="fade-up">
+          <div
+            className="container-text"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <h1>Roedores</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -369,14 +381,14 @@ function Home() {
             />
             <div>
               <img
-                src={RodentsTwo}
+                src={Birds02}
                 className="fishTwo"
                 alt="fish-img"
                 data-aos="fade-up"
                 data-aos-delay="200"
               />
               <img
-                src={RodentsThree}
+                src={Birds03}
                 className="fishThree"
                 alt="fish-img"
                 data-aos="fade-up"
@@ -524,3 +536,4 @@ function Home() {
 }
 
 export default Home;
+1;
