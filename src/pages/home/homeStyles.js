@@ -210,6 +210,7 @@ export const ContainerHome = styled.div`
       margin-bottom: 100px;
     }
   }
+  
   .rodape {
     width: 100%;
     height: 60px;

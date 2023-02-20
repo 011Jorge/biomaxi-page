@@ -10,7 +10,7 @@ import {
   FaPhoneAlt,
   FaInstagram,
   FaFacebook,
-  FaShoppingCart,
+  FaLink,
   FaYoutube,
   FaFrog,
 } from "react-icons/fa/index";
@@ -34,7 +34,7 @@ import FreshFishOne from "../../images/freshwater/freshwater-fish-one.jpg";
 import FreshFishTwo from "../../images/freshwater/freshwater-fish-two.jpg";
 import FreshFishThree from "../../images/freshwater/freshwater-fish-three.jpg";
 
-import RodentsOne from "../../images/rodents/rodents01.jpg";
+import RodentsOne from "../../images/rodents/rodents01.png";
 import RodentsTwo from "../../images/rodents/rodents02.jpg";
 import RodentsThree from "../../images/rodents/rodents03.jpg";
 
@@ -45,6 +45,9 @@ import Birds03 from "../../images/birds/birds03.jpg";
 import Amphibian01 from "../../images/amphibian/amphibian01.jpg";
 import Amphibian02 from "../../images/amphibian/amphibian02.jpg";
 import Amphibian03 from "../../images/amphibian/amphibian03.jpg";
+
+import Hopar from "../../images/itens/marks/hopar.png";
+import Maxxi from "../../images/itens/marks/maxxi.jpg";
 
 import IconFood from "../../images/itens/icon-food.png";
 import IconPlant from "../../images/itens/icon-plant.png";
@@ -127,7 +130,7 @@ function Home() {
       </CNavbar>
       <ContainerHeader id="Start">
         <div>
-          <img src={Logo} style={{ marginLeft: 100 }} alt="logo-image" />
+          <img src={Logo} alt="logo-image" />
           <h1>
             + de 500 Espécies <br /> Disponíveis na Loja
           </h1>
@@ -141,6 +144,8 @@ function Home() {
           src="https://superiorpets.net/wp-content/uploads/2015/11/SunSunlogo.png"
           alt="logo-alcon"
         />
+        <img src={Hopar} alt="logo-hopar" />
+        <img src={Maxxi} alt="logo-hopar" />
         <img
           src="https://www.interago.com.br/App/Sites/5/mc/Logo%20e%20Favicon/Logo%20Poytara%20com%20Cor.png"
           alt="logo-poytara"
@@ -162,11 +167,12 @@ function Home() {
             <span className="span2">Nós</span>
           </h1>
           <p>
-            Inaugurada no dia 06 de Agosto de 2021 na cidade de Campo Limpo
-            Paulista a Biomaxi Ecossistemas é uma empresa especializada em
-            aquarismo em geral e muitas variedades de peixes jumbo. Tudo que
-            você precisa para o hobby do aquarismo você encontra aqui. Também
-            venha conhecer e interagir na nossa área pet com roedores e coelhos.
+            Inaugurada em 06 de Agosto de 2021 na cidade de Campo Limpo Paulista
+            a Biomaxi Ecossistemas nasceu do nosso amor pelos animais e o bem
+            que eles nos trazem! Somos uma empresa especializada em trazer
+            soluções completas em aquarismo. Desde alevinos até peixes jumbos,
+            de água doce e marinha você encontra aqui! Temos também uma área com
+            roedores que vão te encantar e aves que ganham o nosso coração.
           </p>
         </div>
         <div className="container-export">
@@ -183,14 +189,14 @@ function Home() {
       <Section id="Fish" className="first-section">
         <div className="container-info ">
           <div className="container-text " data-aos="fade-down">
-            <h1>Peixes de Água Salgada</h1>
+            <h1>Peixes Marinhos & Corais</h1>
             <h2>+ de 200 espécies</h2>
             <p>
-              Temos tudo para a montagem e manutenção do seu aquário marinho,
-              desde peixes como os peixes palhaços, Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Ab minima ullam nostrum ea tempora
-              consequatur, voluptate nobis, quis atque odit explicabo nesciunt
-              animi porro amet. Totam, labore sed? Adipisci, atque?
+              Aqui você encontra em um só lugar tudo o que você precisa para
+              montagem e manutenção de seu aquário marinho, pequeno ou grande
+              porte, temos ótimas opções de acordo com sua necessidade. Ótimas
+              marcas importadas e nacionais. E se você procura por aquele peixe
+              ou coral em especial também fazemos pedido sob encomenda.
             </p>
           </div>
           <div className="container-image">
@@ -216,7 +222,6 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-delay="300"
               />
-              100
             </div>
           </div>
         </div>
@@ -252,14 +257,12 @@ function Home() {
             <h1>Peixes de Água Doce</h1>
             <h2>+ de 300 espécies</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
-              voluptatem iusto quis officia dicta veritatis, accusantium fugiat
-              nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Aperiam maxime
-              voluptas, laboriosam quasi amet alias minima magni odit veniam
-              deserunt unde ut ipsum eligendi vero et, illum aspernatur
-              accusamus nihil.
+              Seja para preencher aquele cantinho especial ou aquele projeto
+              personalizado aqui você encontra soluções perfeitas. Sua fauna
+              nunca vai cair na mesmice, aqui você encontra uma variedade de
+              espécies e em diversos tamanhos. Produtos para tratamento e
+              alimentos, tanto vivo como rações super premium, já sabe aqui na
+              Biomaxi você acha.
             </p>
           </div>
         </div>
@@ -271,16 +274,11 @@ function Home() {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <h1>Anfíbios</h1>
+            <h1>Anfíbios & Répteis</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
-              voluptatem iusto quis offiia dicta veritatis, accusantium fugiat
-              nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Aperiam maxime
-              voluptas, laboriosam quasi amet alias minima magni odit veniam
-              deserunt unde ut ipsum eligendi vero et, illum aspernatur
-              accusamus nihil.
+              Se você está a procura de pet aquático nada convencional aqui você
+              encontra: <br /> • rã xenopus <br /> • axolote <br /> • tartaruga
+              tigre d' água <br /> • mudskipper
             </p>
           </div>
           <div className="container-image">
@@ -344,14 +342,8 @@ function Home() {
           >
             <h1>Roedores</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
-              voluptatem iusto quis officia dicta veritatis, accusantium fugiat
-              nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Aperiam maxime
-              voluptas, laboriosam quasi amet alias minima magni odit veniam
-              deserunt unde ut ipsum eligendi vero et, illum aspernatur
-              accusamus nihil.
+              Saia do óbvio! Aqui temos:
+              <br /> • Chinchila <br /> • Hamster
             </p>
           </div>
         </div>
@@ -361,14 +353,7 @@ function Home() {
           <div className="container-text" data-aos="fade-up">
             <h1>Aves</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis pariatur reiciendis, omnis est possimus, temporibus
-              voluptatem iusto quis officia dicta veritatis, accusantium fugiat
-              nesciunt asperiores alias ab molestias unde. Eum. Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Aperiam maxime
-              voluptas, laboriosam quasi amet alias minima magni odit veniam
-              deserunt unde ut ipsum eligendi vero et, illum aspernatur
-              accusamus nihil.
+              • Ring Neck <br /> • Calopsita <br /> • Agapórnis
             </p>
           </div>
 
@@ -405,39 +390,35 @@ function Home() {
           <img src={IconFood} alt="icon-food" />
           <h3>Rações</h3>
           <p>
-            As melhores marcas estão na Biomaxi, temos variedade de rações, do
-            tipo floco e granulada, até rações para carnívoros e peixes de
-            fundo. <br /> Temos também <b>alimento vivo</b> para complementar a
-            alimentação dos seus animais.
+            Ampla variedade de tipos, tamanhos e marcas de rações. Lançamentos e
+            o que há de melhor no mercado, Temos também alimento vivo e em
+            conserva para enriquecer a alimentação dos seus animais.
           </p>
         </div>
         <div data-aos="flip-down" data-aos-delay="200">
           <img src={IconPlant} alt="icon-plant" />
           <h3>Plantas Aquáticas</h3>
           <p>
-            Se você curte um aquário plantado, você está no lugar certo! aqui na
-            Biomaxi temos uma enorme variedade de plantas aquáticas, desde low
-            tech até as high tech, para deixar o seu aquário ainda mais natural.
+            Enorme variedade de plantas aquáticas, desde low tech até as high
+            tech, para deixar o seu aquário ainda mais natural e equilibrado.
           </p>
         </div>
         <div data-aos="flip-down" data-aos-delay="300">
           <img src={IconDecoration} alt="icon-decoration" />
           <h3>Decorações</h3>
           <p>
-            Aqui você encontra todo tipo de decoração para deixar seu aquário
-            com a sua cara! <br />
-            substratos, rochas, pedras, troncos, plantas artifícias, navios,
-            tocas e vasta variedade de objetos decoradores.
+            Desde um enfeite delicado até uma decoração de presença você
+            encontra aqui. Substratos, rochas, pedras, troncos, plantas
+            artificiais, enfeites de resina para todos os gostos.
           </p>
         </div>
         <div data-aos="flip-down" data-aos-delay="400">
           <img src={IconEquipment} alt="icon-equipment" />
           <h3>Equipamentos</h3>
           <p>
-            Temos todos os tipos de equipamento e soluções para aquários
-            marinhos e água doce, desde filtros, luminárias, termômetros até
-            alimentadores automáticos. Temos testes de ph, nitrito, amônia e
-            anticloro e muito mais!
+            Equipamentos e soluções modernas para aquários marinhos, água doce e
+            lagos das melhores marcas. Também temos peças de reposição e
+            manutenção.
           </p>
         </div>
       </ContainerAccessories>
@@ -463,8 +444,8 @@ function Home() {
                 <a href="https://www.youtube.com/@biomaxi5420" target="_blank">
                   <FaYoutube />
                 </a>
-                <a href="https://www.biomaxi.com.br/" target="_blank">
-                  <FaShoppingCart />
+                <a href="https://biomaxilink.netlify.app" target="_blank">
+                  <FaLink />
                 </a>
               </div>
             </div>
