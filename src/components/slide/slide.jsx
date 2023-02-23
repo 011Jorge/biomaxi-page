@@ -6,7 +6,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import Banner01 from "../../images/itens/banners/banner1.png";
 import Banner02 from "../../images/itens/banners/banner2.png";
 
-import { Container } from "./slideStyles";
+import { Container } from "./slideStyles.js";
 
 function Carousel() {
   return (

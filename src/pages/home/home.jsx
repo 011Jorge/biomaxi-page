@@ -24,7 +24,7 @@ import {
   CNavLink,
 } from "@coreui/react";
 
-import Slide from "../../components/slide/slide";
+import Slide from "../../components/slide/slide.jsx";
 
 import SaltFishOne from "../../images/saltwater/saltwater-fish-one.jpg";
 import SaltFishTwo from "../../images/saltwater/saltwater-fish-two.jpg";
@@ -65,7 +65,7 @@ import {
   ContainerFooter,
   Section,
   ContainerMarks,
-} from "./homeStyles";
+} from "./homeStyles.js";
 
 function Home() {
   const [visible, setVisible] = useState(false);
